@@ -1,2 +1,1 @@
-# myBlog
-My little blog area based on jekyll
+Blog of Mate Molnar
