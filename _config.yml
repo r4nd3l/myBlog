@@ -2,6 +2,11 @@
 # This file contains configuration flags to customize your site
 #
 
+# Collection
+collections:
+  stories:
+    output: true
+
 # Name of your site (displayed in the header)
 name: Mate Molnar
 

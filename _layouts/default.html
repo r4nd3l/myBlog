@@ -21,8 +21,8 @@
 
   </head>
 
-  <body class="xl:container">
-    <div class="mx-auto">
+  <body class="xl:container mx-auto">
+    <div class="py-4">
       <div class="grid grid-cols-12">
         <header class="col-span-12">
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
@@ -33,7 +33,13 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <!-- All the blog posts -->
+            <a href="{{ site.baseurl }}/">BlogAll</a>
+
+            <!-- Later -->
+            <a href="{{ site.baseurl }}/tags">PostByTags</a>
+            <a href="{{ site.baseurl }}/categories">PostByCategories</a>
+            <a href="{{ site.baseurl }}/stories">Stories</a>
             <a href="{{ site.baseurl }}/pages/about">About</a>
           </nav>
         </header>
