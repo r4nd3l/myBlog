@@ -3,6 +3,7 @@
 #
 
 # Collection
+collections_dir: blog
 collections:
   stories:
     output: true
