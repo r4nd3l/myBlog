@@ -1,0 +1,21 @@
+/* Custom settings */
+:root{
+    --text-sh-: 2px 3px 2px rgba(33,33,33,0.25);
+}
+
+html{
+    font-family: 'Roboto';
+}
+
+.hover\:font-bold:hover {
+    font-weight: 700;
+}
+
+.text-teal,
+.bg-teal{
+    color: #28a745;
+}
+
+.text-shadow{
+    text-shadow: var(--text-sh-);
+}

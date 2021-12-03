@@ -11,40 +11,51 @@
 
     <!-- Font-AweSome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
-
-    <!-- CDNs -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- CSS and SCSS -->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/style.css" />
+    <!-- CDNs -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/custom.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
   </head>
 
-  <body class="xl:container mx-auto">
-    <div class="py-4">
-      <div class="grid grid-cols-12">
-        <header class="col-span-12">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+  <body class="mx-auto">
+      <header class="grid grid-cols-12 shadow">
+        <div class="col-span-12">            
+          <div class="flex justify-between my-2 mx-4">
 
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <div class="flex items-center">
+              <a href="{{ site.baseurl }}/" class="text-2xl font-light">
+                <i class="fas fa-code text-teal" title="{{ site.brand }}"></i>
+              </a>
+            </div>
+            
+            <nav class="items-center hidden md:flex">
+              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/">Home</a>
+              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/">myBlog</a>
+              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">DevNotes</a>
+              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">GitRepos</a>
+              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">Hobbies</a>
+              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/pages/about">About</a>
+            </nav>
+
+            <div class="w-12 h-auto hidden lg:block">
+              <a href="{{ site.baseurl }}/" class="site-avatar">
+                <img src="{{ site.avatar }}" class="rounded-full" alt="avatar">
+              </a>
+            </div>
+
           </div>
-
-          <nav>
-            <!-- All the blog posts -->
-            <a href="{{ site.baseurl }}/">BlogAll</a>
-
-            <!-- Later -->
-            <a href="{{ site.baseurl }}/tags">PostByTags</a>
-            <a href="{{ site.baseurl }}/categories">PostByCategories</a>
-            <a href="{{ site.baseurl }}/stories">Stories</a>
-            <a href="{{ site.baseurl }}/pages/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
+        </div>
+    </header>
 
     <div id="main" role="main" class="mx-auto">
       <div class="grid grid-cols-12">
@@ -59,6 +70,11 @@
       <div class="grid grid-cols-12">
         <footer class="col-span-12">
           {% include svg-icons.html %}
+
+          <div class="border-2">
+            <a class="mx-4" href="{{ site.baseurl }}/view/tags">PostByTags</a>
+            <a class="mx-4" href="{{ site.baseurl }}/view/categories">PostByCategories</a>
+          </div>
         </footer>
       </div>
     </div>

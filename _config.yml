@@ -8,14 +8,24 @@ collections:
   stories:
     output: true
 
+# Greeting 
+greet: Hello friend!
+
+# Short induction
+induction: Thanks so much for stopping by. Here is something you probably want to check out! - Matt 
+
+# Community brand name 
+brand: DevCorner
+
 # Name of your site (displayed in the header)
-name: Mate Molnar
+name: Mate Molnar 
 
 # Short bio or description (displayed in the header)
-description: Web and Multimedia Developer
+description: Web Developer (BS.c.) and an educated Multimedia Designer located at Hungary. - I design and develop experience that makes people's life simple.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars.githubusercontent.com/u/12675595?v=4
+# avatar: https://avatars.githubusercontent.com/u/12675595?v=4
+avatar: /../images/avatar.jpeg
 
 #
 # Flags below are optional
