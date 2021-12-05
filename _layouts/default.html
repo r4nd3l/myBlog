@@ -28,36 +28,65 @@
   </head>
 
   <body class="mx-auto">
-      <header class="grid grid-cols-12 shadow">
-        <div class="col-span-12">            
-          <div class="flex justify-between my-2 mx-4">
+    <header class="grid grid-cols-12 shadow">
+      <div class="col-span-12">            
+        <div class="flex justify-between my-2 mx-4">
 
-            <div class="flex items-center">
-              <a href="{{ site.baseurl }}/" class="text-2xl font-light">
-                <i class="fas fa-code text-teal" title="{{ site.brand }}"></i>
-              </a>
-            </div>
-            
-            <nav class="items-center hidden md:flex">
-              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/">Home</a>
-              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/">myBlog</a>
-              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">DevNotes</a>
-              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">GitRepos</a>
-              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">Hobbies</a>
-              <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/pages/about">About</a>
-            </nav>
-
-            <div class="w-12 h-auto hidden lg:block">
-              <a href="{{ site.baseurl }}/" class="site-avatar">
-                <img src="{{ site.avatar }}" class="rounded-full" alt="avatar">
-              </a>
-            </div>
-
+          <div class="flex items-center">
+            <a href="{{ site.baseurl }}/" class="text-2xl font-light">
+              <i class="fas fa-code text-teal" title="{{ site.brand }}"></i>
+            </a>
           </div>
+          
+          <nav class="items-center hidden md:flex">
+            <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/">Home</a>
+            <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/">myBlog</a>
+            <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">DevNotes</a>
+            <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">GitRepos</a>
+            <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">Hobbies</a>
+            <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/pages/about">About</a>
+          </nav>
+
+          <nav class="flex items-center md:hidden">
+            <button class="sidebarBtn">
+              <i class="fas fa-bars"></i>
+            </button>
+          </nav>
+
+          <div class="w-12 h-auto hidden lg:block">
+            <a href="{{ site.baseurl }}/" class="site-avatar">
+              <img src="{{ site.avatar }}" class="rounded-full" alt="avatar">
+            </a>
+          </div>
+
         </div>
+      </div>
     </header>
 
-    <div id="main" role="main" class="mx-auto">
+    <!-- sidebar -->
+    <div id="sidebarMenu" class="bg-teal text-blue-100 w-64 space-y-6 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
+      <!-- logo -->
+      <span class="float-right mr-4 mt-2">
+        <a href="javascript:void(0)"><i class="far fa-times-circle text-2xl sidebarBtn"></i></a>
+      </span>
+      <span class="text-white flex items-center space-x-2 px-4">
+        <a href="{{ site.baseurl }}/" class="text-2xl font-light">
+          <i class="fas fa-code text-white" title="{{ site.brand }}"></i>
+          <span class="text-2xl font-extrabold">{{ site.brand }}</span>
+        </a>
+      </span>
+      <hr>
+      <nav>
+        <a class="block py-2.5 px-4 transition duration-200 hover:bg-teal-light text-white" href="{{ site.baseurl }}/">Home</a>
+        <a class="block py-2.5 px-4 transition duration-200 hover:bg-teal-light text-white" href="{{ site.baseurl }}/">myBlog</a>
+        <a class="block py-2.5 px-4 transition duration-200 hover:bg-teal-light text-white" href="{{ site.baseurl }}/view/stories">DevNotes</a>
+        <a class="block py-2.5 px-4 transition duration-200 hover:bg-teal-light text-white" href="{{ site.baseurl }}/view/stories">GitRepos</a>
+        <a class="block py-2.5 px-4 transition duration-200 hover:bg-teal-light text-white" href="{{ site.baseurl }}/view/stories">Hobbies</a>
+        <a class="block py-2.5 px-4 transition duration-200 hover:bg-teal-light text-white" href="{{ site.baseurl }}/pages/about">About</a>
+      </nav>
+    </div>
+
+    <div id="main" role="main" class="sidebarBtn mx-auto">
       <div class="grid grid-cols-12">
         <div class="col-span-12">
           <!-- _layout: -->
@@ -80,5 +109,6 @@
     </div>
 
     {% include analytics.html %}
+    <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
   </body>
 </html>

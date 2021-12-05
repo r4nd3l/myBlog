@@ -11,11 +11,19 @@ html{
     font-weight: 700;
 }
 
-.text-teal,
-.bg-teal{
-    color: #28a745;
-}
+.text-teal{color: #28a745;}
+.hover\:text-teal:hover{color: #28a745;}
+
+.text-teal-light{color: #62b16b;}
+.hover\:text-teal-light:hover{color: #62b16b;}
+
+.bg-teal{background-color: #28a745;}
+.hover\:bg-teal:hover{background-color: #28a745;}
+
+.bg-teal-light{background-color: #62b16b;}
+.hover\:bg-teal-light:hover{background-color: #62b16b;}
 
 .text-shadow{
     text-shadow: var(--text-sh-);
 }
+
