@@ -27,3 +27,6 @@ html{
     text-shadow: var(--text-sh-);
 }
 
+.blur-x{filter: blur(1px);}
+.blur-s{filter: blur(2px);}
+

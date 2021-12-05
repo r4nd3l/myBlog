@@ -10,7 +10,7 @@
     <![endif]-->
 
     <!-- Font-AweSome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" />
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -49,7 +49,7 @@
 
           <nav class="flex items-center md:hidden">
             <button class="sidebarBtn">
-              <i class="fas fa-bars"></i>
+              <i class="fas fa-bars text-gray-400 text-2xl"></i>
             </button>
           </nav>
 
@@ -63,11 +63,20 @@
       </div>
     </header>
 
+    <div id="main" role="main" class="mainBlur mx-auto">
+      <div class="grid grid-cols-12">
+        <div class="col-span-12">
+          <!-- _layout: -->
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
     <!-- sidebar -->
-    <div id="sidebarMenu" class="bg-teal text-blue-100 w-64 space-y-6 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
+    <div id="sidebarMenu" class="bg-teal text-blue-100 w-64 space-y-6 absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out z-10">
       <!-- logo -->
       <span class="float-right mr-4 mt-2">
-        <a href="javascript:void(0)"><i class="far fa-times-circle text-2xl sidebarBtn"></i></a>
+        <a href="javascript:void(0)"><i class="far fa-times-circle text-white text-2xl sidebarBtn"></i></a>
       </span>
       <span class="text-white flex items-center space-x-2 px-4">
         <a href="{{ site.baseurl }}/" class="text-2xl font-light">
@@ -86,27 +95,29 @@
       </nav>
     </div>
 
-    <div id="main" role="main" class="sidebarBtn mx-auto">
+    <!-- footer -->
+    <footer class="footerBlur mx-auto bg-white border-solid border-t-2 border-gray-200 fixed bottom-0 w-full">
       <div class="grid grid-cols-12">
-        <div class="col-span-12">
-          <!-- _layout: -->
-          {{ content }}
+        <div class="col-span-12 grid sm:flex justify-between items-center text-center sm:text-left mx-auto sm:mx-4 my-1">
+          <div class="grid text-sm text-gray-500">
+            <a href="{{ site.baseurl }}/" class="font-bold">
+              <i class="fas fa-code text-teal" title="{{ site.brand }}"></i>
+              <span class="">{{ site.brand }}</span>
+            </a>
+            <span>&copy; <span id="year"></span> - made by <a href="https://github.com/{{ site.footer-links.github }}" target="_blank" class="text-bold">{{ site.name }}</a></span>
+          </div>
+
+          <div class="text-sm hidden md:block">
+            <a class="mx-2 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/tags">Posts by tags</a>
+            <a class="mx-2 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/categories">Posts by categories</a>
+          </div>
+
+          <div class="flex justify-center items-center">
+            {% include svg-icons.html %}
+          </div>
         </div>
       </div>
-    </div>
-
-    <div class="mx-auto">
-      <div class="grid grid-cols-12">
-        <footer class="col-span-12">
-          {% include svg-icons.html %}
-
-          <div class="border-2">
-            <a class="mx-4" href="{{ site.baseurl }}/view/tags">PostByTags</a>
-            <a class="mx-4" href="{{ site.baseurl }}/view/categories">PostByCategories</a>
-          </div>
-        </footer>
-      </div>
-    </div>
+    </footer>
 
     {% include analytics.html %}
     <script type="text/javascript" src="{{ site.baseurl }}/assets/js/main.js"></script>
