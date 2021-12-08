@@ -30,3 +30,9 @@ html{
 .blur-x{filter: blur(1px);}
 .blur-s{filter: blur(2px);}
 
+.w-fit{
+    width: fit-content;
+}
+.h-fit{
+    height: fit-content;
+}

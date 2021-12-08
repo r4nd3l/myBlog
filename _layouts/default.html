@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -29,7 +29,7 @@
 
   <body class="mx-auto">
     <header class="grid grid-cols-12 shadow">
-      <div class="col-span-12">            
+      <div class="col-span-12 bg-gray-100">            
         <div class="flex justify-between my-2 mx-4">
 
           <div class="flex items-center">
@@ -39,7 +39,7 @@
           </div>
           
           <nav class="items-center hidden md:flex">
-            <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/">Home</a>
+            <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/pages/home">Home</a>
             <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/">myBlog</a>
             <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">DevNotes</a>
             <a class="mx-4 text-gray-400 hover:text-gray-600 hover:font-bold" href="{{ site.baseurl }}/view/stories">GitRepos</a>
@@ -96,7 +96,7 @@
     </div>
 
     <!-- footer -->
-    <footer class="footerBlur mx-auto bg-white border-solid border-t-2 border-gray-200 fixed bottom-0 w-full">
+    <footer class="footerBlur mx-auto bg-gray-100 border-solid border-t-2 border-gray-200 fixed bottom-0 w-full">
       <div class="grid grid-cols-12">
         <div class="col-span-12 grid sm:flex justify-between items-center text-center sm:text-left mx-auto sm:mx-4 my-1">
           <div class="grid text-sm text-gray-500">
