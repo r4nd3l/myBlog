@@ -5,7 +5,7 @@
 # Collection
 collections_dir: blog
 collections:
-  stories:
+  dev_notes:
     output: true
 
 # Greeting 
