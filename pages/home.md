@@ -1,6 +1,6 @@
 ---
 layout: main
-title: About
+title: Home
 permalink: /pages/home
 ---
 
