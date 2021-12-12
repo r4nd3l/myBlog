@@ -5,7 +5,13 @@
 # Collection
 collections_dir: blog
 collections:
-  dev_notes:
+  myblog:
+    output: true
+  devnotes:
+    output: true
+  hobbies:
+    output: true
+  about:
     output: true
 
 # Greeting 
