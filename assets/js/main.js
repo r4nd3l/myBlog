@@ -76,7 +76,7 @@ let currentCateg = []
 
 function gitCallSettings() {
   return new Promise((resolve, reject) => {
-    fetch('https://r4nd3l.github.io/DevCornerPortfolio/settings.json')
+    fetch('https://r4nd3l.github.io/assets/json/settings.json')
       .then(response => {
         return response.json().then(data => {
 
