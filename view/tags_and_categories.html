@@ -14,7 +14,7 @@ title: Tags
   {% assign tags =  site.myblog | map: 'tags' | join: ','  | split: ',' | uniq %}
   {% for tag in tags %}
   <div class="my-3">
-      <small class=""><i class="fas fa-hashtag"></i>{{ tag }}</small>
+      <small class=""><i class="fas fa-hashtag text-teal"></i>{{ tag }}</small>
       <ul>
       {% for myblog in site.myblog %}
         {% if myblog.tags contains tag %}
@@ -31,7 +31,7 @@ title: Tags
   {% assign tags =  site.devnotes | map: 'tags' | join: ','  | split: ',' | uniq %}
   {% for tag in tags %}
   <div class="my-3">
-      <small class=""><i class="fas fa-hashtag"></i>{{ tag }}</small>
+      <small class=""><i class="fas fa-hashtag text-teal"></i>{{ tag }}</small>
       <ul>
       {% for devnotes in site.devnotes %}
         {% if devnotes.tags contains tag %}
@@ -48,7 +48,7 @@ title: Tags
   {% assign tags =  site.hobbies | map: 'tags' | join: ','  | split: ',' | uniq %}
   {% for tag in tags %}
   <div class="my-3">
-      <small class=""><i class="fas fa-hashtag"></i>{{ tag }}</small>
+      <small class=""><i class="fas fa-hashtag text-teal"></i>{{ tag }}</small>
       <ul>
       {% for hobbies in site.hobbies %}
         {% if hobbies.tags contains tag %}
@@ -65,7 +65,7 @@ title: Tags
   {% assign tags =  site.about | map: 'tags' | join: ','  | split: ',' | uniq %}
   {% for tag in tags %}
   <div class="my-3">
-      <small class=""><i class="fas fa-hashtag"></i>{{ tag }}</small>
+      <small class=""><i class="fas fa-hashtag text-teal"></i>{{ tag }}</small>
       <ul>
       {% for about in site.about %}
         {% if about.tags contains tag %}
@@ -89,7 +89,7 @@ title: Tags
   {% assign categories =  site.myblog | map: 'categories' | join: ','  | split: ',' | uniq %}
   {% for categorie in categories %}
   <div class="my-3">
-      <small class=""><i class="fas fa-hashtag"></i>{{ categorie }}</small>
+      <small class=""><i class="fas fa-hashtag text-teal"></i>{{ categorie }}</small>
       <ul>
       {% for myblog in site.myblog %}
         {% if myblog.categories contains categorie %}
@@ -106,7 +106,7 @@ title: Tags
   {% assign categories =  site.devnotes | map: 'categories' | join: ','  | split: ',' | uniq %}
   {% for categorie in categories %}
   <div class="my-3">
-      <small class=""><i class="fas fa-hashtag"></i>{{ categorie }}</small>
+      <small class=""><i class="fas fa-hashtag text-teal"></i>{{ categorie }}</small>
       <ul>
       {% for devnotes in site.devnotes %}
         {% if devnotes.categories contains categorie %}
@@ -123,7 +123,7 @@ title: Tags
   {% assign categories =  site.hobbies | map: 'categories' | join: ','  | split: ',' | uniq %}
   {% for categorie in categories %}
   <div class="my-3">
-      <small class=""><i class="fas fa-hashtag"></i>{{ categorie }}</small>
+      <small class=""><i class="fas fa-hashtag text-teal"></i>{{ categorie }}</small>
       <ul>
       {% for hobbies in site.hobbies %}
         {% if hobbies.categories contains categorie %}
@@ -140,7 +140,7 @@ title: Tags
   {% assign categories =  site.about | map: 'categories' | join: ','  | split: ',' | uniq %}
   {% for categorie in categories %}
   <div class="my-3">
-      <small class=""><i class="fas fa-hashtag"></i>{{ categorie }}</small>
+      <small class=""><i class="fas fa-hashtag text-teal"></i>{{ categorie }}</small>
       <ul>
       {% for about in site.about %}
         {% if about.categories contains categorie %}
