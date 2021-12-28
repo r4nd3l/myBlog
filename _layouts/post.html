@@ -2,16 +2,19 @@
 layout: default
 ---
 
-<article>
-  <h1>{{ page.title }}</h1>
-
-  <div>
-    {{ content }}
+<article class="lg:container mx-auto mb-32 sm:mb-20">
+  <div class="grid grid-cols-12 gap-4 mx-4 sm:mx-16 text-gray-500">
+    <div class="col-span-12 my-10">
+      <h2 class="text-2xl font-medium">{{ page.title }}</h2>
+      <div class="grid xl:flex justify-between">
+        <small class="truncate-2-line md:truncate-1-line pr-4 xl:pr-16"><i class="far fa-calendar-check mr-1 text-teal"></i>{{ page.date | date_to_long_string }}</small>
+        <span class="flex flex-wrap xl:flex-nowrap items-end mt-2 xl:mt-0">
+          {% for tag in page.tags %}
+            <small class="flex text-gray-400 mr-4 xl:mr-0 xl:ml-4"><i class="fas fa-hashtag py-0.5 text-teal"></i>{{ tag }}</small>
+          {% endfor %}
+        </span>
+      </div>
+      <div class="text-justify mt-8">{{ content }}</div>
+    </div>
   </div>
-
-  <div>
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-
-  {% include disqus.html %}
 </article>

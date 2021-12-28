@@ -1,5 +1,4 @@
 ---
-layout: main
 title: Home
 permalink: /pages/home
 ---
