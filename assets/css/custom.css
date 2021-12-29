@@ -1,27 +1,49 @@
 /* Custom settings */
 :root{
     --text-sh-: 2px 3px 2px rgba(33,33,33,0.25);
+    --cl-teal-: #28a745;
+    --cl-teal-light-: #62b16b;
+    --cl-teal-lighter-: #62b16b81;
+}
+
+/* Custom Highlight settings */
+::selection {
+	background: var(--cl-teal-lighter-) !important;
+}
+::-moz-selection {
+	background: var(--cl-teal-lighter-) !important;
 }
 
 html{
     font-family: 'Roboto';
 }
 
+div.highlight {
+    background-color: unset !important;
+    padding: unset !important;
+    border: unset !important;
+    -moz-box-shadow: unset !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+    margin: unset !important;
+    overflow: unset !important;
+}
+
 .hover\:font-bold:hover {
     font-weight: 700;
 }
 
-.text-teal{color: #28a745;}
-.hover\:text-teal:hover{color: #28a745;}
+.text-teal{color: var(--cl-teal-);}
+.hover\:text-teal:hover{color: var(--cl-teal-);}
 
-.text-teal-light{color: #62b16b;}
-.hover\:text-teal-light:hover{color: #62b16b;}
+.text-teal-light{color: var(--cl-teal-light-);}
+.hover\:text-teal-light:hover{color: var(--cl-teal-light-);}
 
-.bg-teal{background-color: #28a745;}
-.hover\:bg-teal:hover{background-color: #28a745;}
+.bg-teal{background-color: var(--cl-teal-);}
+.hover\:bg-teal:hover{background-color: var(--cl-teal-);}
 
-.bg-teal-light{background-color: #62b16b;}
-.hover\:bg-teal-light:hover{background-color: #62b16b;}
+.bg-teal-light{background-color: var(--cl-teal-light-);}
+.hover\:bg-teal-light:hover{background-color: var(--cl-teal-light-);}
 
 .text-shadow{
     text-shadow: var(--text-sh-);

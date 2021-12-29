@@ -1,0 +1,4 @@
+I"‡<p>Git-FTP install 
+curl https://raw.githubusercontent.com/git-ftp/git-ftp/master/git-ftp &gt; /bin/git-ftp
+chmod 755 /bin/git-ftp</p>
+:ET

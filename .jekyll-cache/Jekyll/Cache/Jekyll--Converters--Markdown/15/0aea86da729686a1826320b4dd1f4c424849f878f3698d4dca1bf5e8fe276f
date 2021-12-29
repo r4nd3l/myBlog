@@ -1,0 +1,10 @@
+I"Ì<h2 id="add-event-listener-to-multiple-buttons-with-the-same-class">Add event listener to multiple buttons with the same class</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    btns = document.getElementsByClassName("saveBtn");
+    for (var i = 0; i &lt; btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+			//Add function here
+        });
+    }
+</code></pre></div></div>
+:ET

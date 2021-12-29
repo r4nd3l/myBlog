@@ -1,0 +1,31 @@
+I"�<h4 id="usage-in-the-terminal">Usage: (In the terminal)</h4>
+<p>command to navigate to a directory:</p>
+<blockquote>
+  <p>$ cd ~/Downloads/</p>
+</blockquote>
+
+<p>Start a http file server on default 8000 port:</p>
+<blockquote>
+  <p>$ python -m SimpleHTTPServer</p>
+</blockquote>
+
+<p>Or use a defined port:</p>
+<blockquote>
+  <h2 id="-python--m-simplehttpserver-8088">$ python -m SimpleHTTPServer 8088</h2>
+</blockquote>
+
+<h4 id="to-access-the-file-server-go-to-httpserveripport-in-clients-browser">To access the file server, go to http://serverip:port in client’s browser.</h4>
+<hr />
+
+<h5 id="if-you-do-not-already-have-a-gui-on-your-raspbian-or-you-use-ssh-to-connect-to-your-raspberry-you-can-use-the-following-command">If you do not already have a GUI on your Raspbian, or you use SSH to connect to your Raspberry, you can use the following command:</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  wget -O check_apache.html http://127.0.0.1 
+</code></pre></div></div>
+
+<p>This command will save the HTML code of the page in the file “check_apache.html” in the current directory.
+So you only have to read the file with the command:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  cat ./check_apache.html
+</code></pre></div></div>
+
+<p>If you see marked at a location in the code “It works! ” is that Apache is working.</p>
+:ET

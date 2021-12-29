@@ -1,0 +1,75 @@
+I""<h1 id="ufw-setupconfiguration">Ufw setup/configuration</h1>
+
+<hr />
+
+<h5 id="install-ufw">Install ufw</h5>
+<blockquote>
+  <p>$ sudo apt-get install ufw</p>
+</blockquote>
+
+<hr />
+
+<h5 id="default-setup">Default setup</h5>
+<blockquote>
+  <p>$ sudo ufw default deny incoming
+$ sudo ufw deafult allow outgoing</p>
+</blockquote>
+
+<hr />
+
+<h5 id="allowing-ssh-connections">Allowing SSH connections</h5>
+<blockquote>
+  <p>$ sudo ufw allow ssh
+$ sudo ufw allow 22</p>
+</blockquote>
+
+<hr />
+
+<h5 id="enabling-ufw">Enabling Ufw</h5>
+<blockquote>
+  <p>$ sudo ufw enable</p>
+</blockquote>
+
+<hr />
+
+<h5 id="allowing-other-connections">Allowing other connections</h5>
+<blockquote>
+  <p>$ sudo ufw allow http
+$ sudo ufw allow 80</p>
+
+  <p>$ sudo ufw allow https
+$ sudo ufw allow 443</p>
+
+  <p>$ sudo ufw allow ftp
+$ sudo ufw allow 21/tcp</p>
+</blockquote>
+
+<hr />
+
+<h5 id="specific-port-ranges">Specific port ranges</h5>
+<blockquote>
+  <p>$ sudo ufw allow 6000:6007/tcp
+$ sudo ufw allow 6000:6007/udp</p>
+</blockquote>
+
+<hr />
+
+<h5 id="specific-ip-addresses">Specific IP addresses</h5>
+<blockquote>
+  <p>$ sudo ufw allow from 15.15.15.51</p>
+  <h6 id="specific-port-that-the-ip-addresses-to-connected-to">Specific port that the IP addresses to connected to</h6>
+  <p>$ sudo ufw allow from 15.15.15.51 to port 22</p>
+</blockquote>
+
+<hr />
+
+<h5 id="subnets">Subnets</h5>
+<blockquote>
+  <p>$ sudo ufw allow from 15.15.15.0/24</p>
+  <h5 id="specify-the-destination-port">Specify the destination port</h5>
+  <p>$ sudo ufw allow from 15.15.15.0/24 to any port 22</p>
+</blockquote>
+
+<hr />
+
+:ET

@@ -1,0 +1,6 @@
+I"ÿ<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("wifiName_24").style.color = "blue";
+});
+
+</code></pre></div></div>
+:ET

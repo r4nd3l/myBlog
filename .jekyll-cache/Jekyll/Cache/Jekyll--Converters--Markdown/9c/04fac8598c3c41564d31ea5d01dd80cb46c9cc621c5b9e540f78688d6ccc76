@@ -1,0 +1,39 @@
+I"�<p>Git-FTP install 
+curl https://raw.githubusercontent.com/git-ftp/git-ftp/master/git-ftp &gt; /bin/git-ftp
+chmod 755 /bin/git-ftp</p>
+
+<p>On Ubuntu:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ sudo apt-get install git-ftp
+$ git-ftp --version
+</code></pre></div></div>
+
+<p>Git-FTP method https://git-ftp.github.io/
+git-ftp method</p>
+
+<ul>
+  <li>git init</li>
+  <li>git status</li>
+  <li>git add .</li>
+  <li>
+    <p>git commit -m “commit title”</p>
+  </li>
+  <li>git config git-ftp.url ‘ftp.example.net’
+  or sub-domain</li>
+  <li>git config git-ftp.url ‘ftp.example.net/public_html/beta’</li>
+  <li>git config git-ftp.user ‘ftp-user’</li>
+  <li>git config git-ftp.password ‘secr3t’</li>
+</ul>
+
+<p>(just onces)</p>
+<ul>
+  <li>git ftp init</li>
+</ul>
+
+<p>Any other changes afterwards</p>
+<ul>
+  <li>git status</li>
+  <li>git add .</li>
+  <li>git commit -m “commit title”</li>
+  <li>git ftp push (or sync)</li>
+</ul>
+:ET

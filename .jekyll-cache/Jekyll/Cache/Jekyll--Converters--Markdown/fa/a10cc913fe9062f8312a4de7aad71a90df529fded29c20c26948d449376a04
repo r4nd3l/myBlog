@@ -1,0 +1,83 @@
+I"�
+<h1 id="using-css-feature-queries">Using CSS feature queries</h1>
+<blockquote>
+  <p>CSS feature queries are now supported almost everywhere. They allow you to use cutting edge CSS with subtle and precise feature detection.</p>
+</blockquote>
+
+<blockquote>
+  <h2 id="feature-queries-are-supported-by-chrome-28-microsoft-edge-12-firefox-52-safari-9-ios-safari-9-opera-121-and-chrome-for-android-71-theres-no-support-for-ie-but-that-really-isnt-the-point">Feature queries are supported by Chrome 28+, Microsoft Edge 12+, Firefox 52+, Safari 9+, iOS Safari 9+, Opera 12.1+ and Chrome for Android 71+. There’s no support for IE, but that really isn’t the point.</h2>
+</blockquote>
+
+<h2 id="how-feature-queries-work">How feature queries work</h2>
+<blockquote>
+  <p>The concept is quite simple, and has the same structure as <code class="language-plaintext highlighter-rouge">media queries</code>.</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  @supports (height: 100vh) {
+     .container {
+          height: 100vh;
+     }
+}
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>This asks if the vh value is supported, the viewport height of the browser, rather than the height of the page. If so, it sets the height value.</p>
+</blockquote>
+
+<blockquote>
+  <p>The following example shows real world use of feature queries.</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  .container {
+     height: 100%;
+}
+
+@supports (height: 100vh) {
+     .container {
+          height: 100vh;
+     }
+}
+
+</code></pre></div></div>
+
+<blockquote>
+  <p>The container div has a height value of 100%, unless the browser supports the vh value. Older browsers will simply ignore the @supports block.</p>
+</blockquote>
+
+<blockquote>
+  <p>The <code class="language-plaintext highlighter-rouge">not</code> operator is also supported.</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  .container {
+     height: 100vh;
+}
+
+@supports not (height: 100vh) {
+     .container {
+          height: 100%;
+     }
+}
+</code></pre></div></div>
+
+<blockquote>
+  <p>Another example, this time asking if <code class="language-plaintext highlighter-rouge">CSS Grids</code> are supported.</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  .block {
+     float: left;
+     ...
+}
+
+@supports (display: grid) {
+     .block {
+          float: none;
+          display: grid;
+          ...
+     }
+}
+</code></pre></div></div>
+<blockquote>
+  <p>And so on. Simple and effective.</p>
+</blockquote>
+:ET

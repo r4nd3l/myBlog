@@ -1,0 +1,17 @@
+I"<h2 id="font-feature-settings-property-for-opentype-fonts">Font-feature-settings property for OpenType fonts</h2>
+<blockquote>
+  <p>OpenType fonts have feature settings you can use to tweak the font to your liking, using font-feature-settings property.</p>
+</blockquote>
+
+<blockquote>
+  <p>One specific use-case for this feature is when you wish to use a cool looking font for a countdown timer, but it doesn’t happen to be a mono-spaced font.</p>
+</blockquote>
+
+<blockquote>
+  <p>This means the width of numbers will change and keep pushing content around. Solution:</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  font-feature-settings: “tnum”;
+  font-variant-numeric: tabular-nums;
+</code></pre></div></div>
+:ET

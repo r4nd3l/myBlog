@@ -1,0 +1,3 @@
+I"<h2 id="mount-images">Mount images</h2>
+<h6 id="the-problem-is-that-the-img-files-are-not-images-of-a-partition-but-of-a-whole-disk-that-means-they-start-with-a-bootloader-and-a-partition-table-you-have-to-find-out-the-offset-of-the-partition-and-mount-it-with-the-offset-option-of-mount">The problem is that the .img files are not images of a partition, but of a whole disk. That means they start with a bootloader and a partition table. You have to find out the offset of the partition and mount it with the offset option of mount.</h6>
+:ET

@@ -1,0 +1,13 @@
+I"�<h1 id="hide-mounted-drives">Hide Mounted Drives</h1>
+
+<p>Open a new Terminal window <code class="language-plaintext highlighter-rouge">(Ctrl + Alt + t)</code> and run this command:
+<code class="language-plaintext highlighter-rouge">$ gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts false</code></p>
+
+<p>The change will take effect instantly and mounted drives showing on the Ubuntu Dock will instantly disappear from view.</p>
+
+<p>If you change your mind and want to re-enable mounted drives on the Ubuntu Dock in future, just rerun the same command, omitting the ‘false’ switch at the end like so:</p>
+
+<p><code class="language-plaintext highlighter-rouge">$ gsettings set org.gnome.shell.extensions.dash-to-dock show-mounts true</code></p>
+
+<p>You can access the same setting via a GUI if you install the <code class="language-plaintext highlighter-rouge">dconf-editor</code> tool and navigate to the <code class="language-plaintext highlighter-rouge">org &gt; gnome shell &gt; extensions &gt; dash-to-dock</code> page, switching the <code class="language-plaintext highlighter-rouge">show-mounts</code> toggle to the off position.</p>
+:ET

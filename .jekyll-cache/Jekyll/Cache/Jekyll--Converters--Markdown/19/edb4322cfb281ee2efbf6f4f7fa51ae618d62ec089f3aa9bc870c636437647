@@ -1,0 +1,22 @@
+I"P<h2 id="apple-hfshfs-ubuntu">Apple hfs/hfs+ Ubuntu</h2>
+<p>First, make sure that you have hfsprogs installed. Example installation command:</p>
+
+<blockquote>
+  <p>$ sudo apt-get install hfsprogs</p>
+</blockquote>
+
+<p>Next, mount or remount the HFS+ drive; commands need to be as follows:</p>
+
+<blockquote>
+  <p>$ sudo mount -t hfsplus -o force,rw /dev/sdXY /media/mnt/point</p>
+</blockquote>
+
+<p>ex: $ sudo mount -t hfsplus -o force,rw /dev/sdb2 /mnt/temp/
+(Works with the terminal)</p>
+
+<p>or</p>
+
+<blockquote>
+  <p>$ sudo mount -t hfsplus -o remount,force,rw /mount/point</p>
+</blockquote>
+:ET

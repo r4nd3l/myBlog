@@ -1,0 +1,8 @@
+I"Ä<h4 id="php-send-mail-setup">PHP send mail() setup</h4>
+<hr />
+<blockquote>
+  <p>$ sudo apt-get install postfix
+$ sudo apt install -y mailutils
+($ sudo dpkg-reconfigure postfix)</p>
+</blockquote>
+:ET

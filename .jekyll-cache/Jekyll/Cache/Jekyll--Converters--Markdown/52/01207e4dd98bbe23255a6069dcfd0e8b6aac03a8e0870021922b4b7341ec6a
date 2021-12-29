@@ -1,0 +1,10 @@
+I"W<h3 id="download-from-docincom">Download from docin.com</h3>
+
+<p>docin-dl.py - Downloader from https://www.docin.com/</p>
+
+<p>python script:
+python [source of the script] [pid-number-of-the-page-to-download] [download-destination]</p>
+
+<p>example:
+matt@mattpc:~/Documents/H4ck$ python docin-dl.py 860445075 /home/matt/Documents/H4ck/docin</p>
+:ET

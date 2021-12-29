@@ -1,0 +1,404 @@
+I"�<h1 id="1_changelogmd_template">1_CHANGELOG.md_Template</h1>
+
+<h1 id="changelog">CHANGELOG</h1>
+
+<h2 id="version-059---beta">Version 0.5.9 - Beta</h2>
+<ul>
+  <li>Add: The new Russian Translation. Many Thanks to <a href="https://github.com/elPesecillo">elPesecillo</a>
+     (<a href="https://github.com/pytesNET/tail.select/issues/41">#41</a>)!</li>
+  <li>Add: The new experimental <code class="language-plaintext highlighter-rouge">linguisticRules</code> options, which allows to regex letters, which are
+     (used) similiar. Thanks to (<a href="https://github.com/pytesNET/tail.select/issues/42">#42</a>).</li>
+  <li>Update: [ES6] Changed the last <code class="language-plaintext highlighter-rouge">var</code> variables into <code class="language-plaintext highlighter-rouge">let</code>.</li>
+</ul>
+
+<h2 id="version-058---beta">Version 0.5.8 - Beta</h2>
+<ul>
+  <li>Add: The new Russian Translation. Many Thanks to <a href="https://github.com/tizis">Roman Yepanchenko</a>
+     (<a href="https://github.com/pytesNET/tail.select/issues/38">#38</a>)!</li>
+  <li>Add: Allow callback functions as strings to allow a deeper translation.</li>
+  <li>Add: The new internal method <code class="language-plaintext highlighter-rouge">_e</code>, which handles the translations.</li>
+  <li>Bugfix: Invalid <code class="language-plaintext highlighter-rouge">bower.json</code> file.</li>
+</ul>
+
+<h2 id="version-057---beta">Version 0.5.7 - Beta</h2>
+<ul>
+  <li>Info: It isn’t longer possible to get an option using the internal option number!</li>
+  <li>Remove: The internal-Array storage has been completely removed.</li>
+  <li>Bugfix: The <code class="language-plaintext highlighter-rouge">.remove()</code> method on the options hasn’t worked on the internal-Array storage.</li>
+  <li>Bugfix: The ECMAScript 6 Version returns an Array, while the default version does not.</li>
+  <li>Bugfix: TypeError: Cannot convert undefined or null to object.
+        Thanks To: <a href="https://github.com/pytesNET/tail.select/issues/32">#32</a></li>
+  <li>Bugfix: Remove default options sorting.
+        Thanks To: <a href="https://github.com/pytesNET/tail.select/issues/37">#37</a></li>
+</ul>
+
+<h2 id="version-056---beta">Version 0.5.6 - Beta</h2>
+<ul>
+  <li>Add: The new Brazilian Portuguese Translation. Many Thanks to <a href="https://github.com/igorcm">Igor</a>
+     (<a href="https://github.com/pytesNET/tail.select/pull/34">#34</a>)!</li>
+  <li>Update: the <code class="language-plaintext highlighter-rouge">bower.json</code> and <code class="language-plaintext highlighter-rouge">package.json</code> files</li>
+  <li>Update: Add 2019 to all Copyright notes.</li>
+</ul>
+
+<h2 id="version-055---beta">Version 0.5.5 - Beta</h2>
+<ul>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">searchDisabled</code> option, which allows to exclude disabled options on the search.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">.finder()</code> method depends now on the <code class="language-plaintext highlighter-rouge">.find()</code> method.</li>
+  <li>Bugfix: Wrong Version Number on the main object.</li>
+  <li>Bugfix: Options floats over the dropdown field. <a href="https://github.com/pytesNET/tail.select/issues/28">#28</a></li>
+  <li>Bugfix: Terrible performance of search when descriptions included
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/27">#27</a></li>
+  <li>Bugfix: Search functionality hangs exponentially when regular expression matches against larger source options.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/24">#24</a></li>
+  <li>Merged: (#25)[https://github.com/pytesNET/tail.select/pull/25], thanks to AndrewDRX.</li>
+</ul>
+
+<h2 id="version-054---beta">Version 0.5.4 - Beta</h2>
+<ul>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">modify()</code> method on the string Storage to change the strings globally.
+     Requested by: ashucg @ <a href="https://github.com/pytesNET/tail.select/issues/20">#20</a>.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">.register()</code> method checks now if locale is a string and object a object.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">.register()</code> method returns now <code class="language-plaintext highlighter-rouge">true</code> on success and <code class="language-plaintext highlighter-rouge">false</code> on failure!</li>
+  <li>Bugfix: <strong>ES6</strong> The “Select All” Button doesn’t work on Search (All options gets selected).</li>
+  <li>Bugfix: Z-Index CSS Styling bug (:hover).
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/19">#19</a>.</li>
+  <li>Bugfix: Unnecessary Scrollbar (during a wrong calculation of the dropdown field).
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/19">#19</a>.</li>
+  <li>Bugfix: “Select All” Button selects more items as shown on search results.
+        Thanks to <a href="https://github.com/pytesNET/tail.select/issues/21">#21</a></li>
+  <li>Bugfix: Search functionality breaks when source select’s options contain hyphenated attributes.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/22">#22</a>.</li>
+  <li>Merged: (#23)[https://github.com/pytesNET/tail.select/pull/23], thanks to AndrewDRX.</li>
+</ul>
+
+<h2 id="version-053---beta">Version 0.5.3 - Beta</h2>
+<ul>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">.walk()</code> method on the tailOptions class to “loop” multiple items.</li>
+  <li>Add: The new internal variable <code class="language-plaintext highlighter-rouge">_query</code> for the current query.</li>
+  <li>Update: Changed the RegExp <code class="language-plaintext highlighter-rouge">\b</code>, because it isn’t accurate enough.</li>
+  <li>Update: The complete <code class="language-plaintext highlighter-rouge">sourceBind</code> listener function has been renewed / fixed.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">.enable()</code> and <code class="language-plaintext highlighter-rouge">.disable()</code> methods allows now a single parameter, which controls
+        the new rendering if the respective DOM Elements.</li>
+  <li>Update: Support also [{ key: &lt;&gt;, […] }] array objects.</li>
+  <li>Remove: Unused variable <code class="language-plaintext highlighter-rouge">_pos</code>.</li>
+  <li>Bugfix: The “(Un)Select All” buttons were not limited to the current query!</li>
+  <li>Bugfix: The <code class="language-plaintext highlighter-rouge">.en/disable()</code> methods doesn’t sets the configuration correctly.</li>
+  <li>Bugfix: The <code class="language-plaintext highlighter-rouge">description</code> property on the <code class="language-plaintext highlighter-rouge">items</code> option is required.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/15">#15</a></li>
+  <li>Bugfix: Only the last item gets unchecked after pressing “Unselect All” on specific conditions.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/16">#16</a></li>
+  <li>Bugfix: When the <code class="language-plaintext highlighter-rouge">sourceBind</code> option is <code class="language-plaintext highlighter-rouge">true</code>, the dropdown becomes unusable!
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/17">#17</a></li>
+  <li>Bugfix: Throws <code class="language-plaintext highlighter-rouge">TypeError</code> on “(Un)Select All” buttons on Search Queries.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/18">#18</a></li>
+  <li>Bugfix: Wrong <code class="language-plaintext highlighter-rouge">.en/disable()</code> and <code class="language-plaintext highlighter-rouge">.config(disabled, true|false)</code> order.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/12#issuecomment-442318722">#12</a></li>
+</ul>
+
+<h2 id="version-052---beta">Version 0.5.2 - Beta</h2>
+<ul>
+  <li>Hotfix: Trigger hasn’t triggered on each call!</li>
+</ul>
+
+<h2 id="version-051---beta">Version 0.5.1 - Beta</h2>
+<ul>
+  <li>Hotfix: Wrong If-Condition for <code class="language-plaintext highlighter-rouge">sourceHide</code>.</li>
+  <li>Hotfix: Wrong attribute assignment on the tail.select field for <code class="language-plaintext highlighter-rouge">sourceHide</code>.</li>
+</ul>
+
+<h2 id="version-050---beta">Version 0.5.0 - Beta</h2>
+<ul>
+  <li>Info: The ES6 Edition is just a “REALLY experimental” version!</li>
+  <li>Info: The Priority has changed: Defined Settings &gt; Element Attributes!</li>
+  <li>Add: The new French Translation. Many Thanks to <a href="https://github.com/arabine">Anthony Rabine</a>
+     (<a href="https://github.com/pytesNET/tail.select/issues/11">#11</a>)!</li>
+  <li>Add: The origin select fields gets now also triggered on any <code class="language-plaintext highlighter-rouge">change</code> / <code class="language-plaintext highlighter-rouge">input</code> event.
+     Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/10">#10</a>.</li>
+  <li>Add: Three new designs “Bootstrap2”, “Bootstrap3” and “Bootstrap4” (+ Multiple Color Schemes).</li>
+  <li>Add: A IE incompatible, highly modern ECMAScript 2015 (6) edition (as *-es6.js).</li>
+  <li>Add: The new script version <code class="language-plaintext highlighter-rouge">tail.select-full(.min).js</code>, which contains also all language strings.</li>
+  <li>Add: The new additional file <code class="language-plaintext highlighter-rouge">langs/tail.select-all(.min).js</code> which contains all language strings.</li>
+  <li>Add: Key Listener: Use the Arrow Keys (Down, Up) to scroll through the opened dropdown list.</li>
+  <li>Add: Key Listener: Use the Enter / Return Key to “click” on the focused option.</li>
+  <li>Add: Key Listener: Use the Escape Key to close the dropdown list.</li>
+  <li>Add: The new helper method <code class="language-plaintext highlighter-rouge">create()</code>.</li>
+  <li>Add: The new option <code class="language-plaintext highlighter-rouge">locale</code>, to change the shown language strings.</li>
+  <li>Add: The new option <code class="language-plaintext highlighter-rouge">disabled</code>, which disables the complete tail.select instance.</li>
+  <li>Add: The new option <code class="language-plaintext highlighter-rouge">multiShowLimit</code>, which shows the max. number of selectable options.</li>
+  <li>Add: The new option <code class="language-plaintext highlighter-rouge">sourceBind</code> and <code class="language-plaintext highlighter-rouge">sourceHide</code> replaces the deprecated methods
+     <code class="language-plaintext highlighter-rouge">bindSourceSelect</code> and <code class="language-plaintext highlighter-rouge">hideSelect</code> respectively.</li>
+  <li>Add: The new callback option <code class="language-plaintext highlighter-rouge">cbComplete</code>, which fires when the tail.select instance
+     has been completely rendered.</li>
+  <li>Add: The new option <code class="language-plaintext highlighter-rouge">multiPinSelected</code>, which “pins” selected options to the top of the
+     dropdown list.</li>
+  <li>Add: The new public methods <code class="language-plaintext highlighter-rouge">enable()</code> and <code class="language-plaintext highlighter-rouge">disable()</code> to en/dis -able the complete field.
+     Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/12">#12</a>.</li>
+  <li>Add: The new tailOptions methods <code class="language-plaintext highlighter-rouge">.select()</code>, <code class="language-plaintext highlighter-rouge">.unselect()</code>, <code class="language-plaintext highlighter-rouge">.enable()</code> and <code class="language-plaintext highlighter-rouge">.disable()</code>.</li>
+  <li>Add: The new tailOptions methods <code class="language-plaintext highlighter-rouge">.toggle()</code>, <code class="language-plaintext highlighter-rouge">.invert()</code> and <code class="language-plaintext highlighter-rouge">.all()</code>.</li>
+  <li>Add: The new tailOptions methods <code class="language-plaintext highlighter-rouge">.move()</code> to change the optgroup of an option.</li>
+  <li>Update: The helper methods.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">sourceBind</code> event listener has been optimized and renewed.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">tailOptions</code> class is now an ArrayLike object.</li>
+  <li>Update: The settings are higher ranked then the select attributes.</li>
+  <li>Update: Switched from SASS (SCSS) to LESS.</li>
+  <li>Update: Language Files and Locale / Translation System.</li>
+  <li>Update: The new language files are now compatible with AMD.</li>
+  <li>Update: Many design changes on the default and modern theme.</li>
+  <li>Update: Some Changes on the main RegExp on the search function.
+        Thanks to: <a href="https://haacked.com/archive/2004/10/25/usingregularexpressionstomatchhtml.aspx">You’ve been Haacked</a></li>
+  <li>Update: The tail.select container will be inserted AFTER the source select field.</li>
+  <li>Update: Check the source select field stylings.</li>
+  <li>Update: A new animation flow, using <code class="language-plaintext highlighter-rouge">setTimeout()</code>.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">bind()</code> method binds global events only and gets called by the constructor.</li>
+  <li>Update: The internal <code class="language-plaintext highlighter-rouge">_replaceTypo</code> method has been renamed into <code class="language-plaintext highlighter-rouge">_r</code>.</li>
+  <li>Update: The internal <code class="language-plaintext highlighter-rouge">build()</code> method has been replaced by the API method <code class="language-plaintext highlighter-rouge">query()</code>.</li>
+  <li>Update: Remove the <code class="language-plaintext highlighter-rouge">name</code> attribute on the source select field when using <code class="language-plaintext highlighter-rouge">csvOutput</code>.</li>
+  <li>Update: The option <code class="language-plaintext highlighter-rouge">width</code> now also supports other length units next to “px”.</li>
+  <li>Update: The option <code class="language-plaintext highlighter-rouge">multiContainer</code> allows now also “true” as value, to move selected
+        options to the label element of the respective tail.select instance.</li>
+  <li>Update: The main callback function <code class="language-plaintext highlighter-rouge">cbLoopItem</code> can now also return <code class="language-plaintext highlighter-rouge">null</code> to skip the item
+        and false to “skip / escape” the complete render Loop.</li>
+  <li>Update: The public method <code class="language-plaintext highlighter-rouge">.config()</code> allows now an object as first parameter to set
+        multiple settings at once.</li>
+  <li>Update: The public method <code class="language-plaintext highlighter-rouge">.config()</code> allows now a third parameter, which prevents the
+        rebuilding of the selection field, if you change any option.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">update*()</code> API methods replaces all <code class="language-plaintext highlighter-rouge">set*()</code> API methods.</li>
+  <li>Remove: The <code class="language-plaintext highlighter-rouge">tail.animate()</code> helper function.</li>
+  <li>Remove: The <code class="language-plaintext highlighter-rouge">bindSourceSelect</code> and <code class="language-plaintext highlighter-rouge">hideSelect</code> options has been replaced.</li>
+  <li>Remove: The <code class="language-plaintext highlighter-rouge">.walk()</code> method has been removed (use <code class="language-plaintext highlighter-rouge">walker()</code> instead).</li>
+  <li>Remove: The <code class="language-plaintext highlighter-rouge">.build()</code> method has been removed (use <code class="language-plaintext highlighter-rouge">query()</code> instead).</li>
+  <li>Remove: The <code class="language-plaintext highlighter-rouge">.choose()</code> method has been removed (use the tail options API instead).</li>
+  <li>Bugfix: The <code class="language-plaintext highlighter-rouge">placeholder</code> attribute is used with <code class="language-plaintext highlighter-rouge">.getAttribute()</code>, because its invalid HTML 5!</li>
+  <li>Bugfix: The custom group sorting hasn’t worked due to an faulty statement.</li>
+  <li>Bugfix: The HTML option structure was invalid (<code class="language-plaintext highlighter-rouge">ul ul li</code> instead of <code class="language-plaintext highlighter-rouge">ul li ul li</code>).</li>
+  <li>Bugfix: The hidden csvInput field functions didn’t work on specific cases.</li>
+  <li>Bugfix: The <code class="language-plaintext highlighter-rouge">clone</code> helper function didn’t worked on the IE 9+ browsers.</li>
+  <li>Bugfix: Tags duplicated when preselected
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/14">#14</a>.</li>
+  <li>Bugfix: Non-Source Options gets duplicated.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/13">#13</a>.</li>
+  <li>Bugfix: The hidden csvInput field is rendered, even if the option is disabled
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/12">#12</a>.</li>
+  <li>Bugfix: The instance ignores the disabled attribute on the main source element.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/12">#12</a>.</li>
+  <li>Bugfix: Check the visibility of the source select field.
+        Thanks to: <a href="https://github.com/pytesNET/tail.select/issues/10">#10</a>.</li>
+</ul>
+
+<h2 id="version-042---beta">Version 0.4.2 - Beta</h2>
+<ul>
+  <li>Bugfix: Search problem <a href="https://github.com/pytesNET/tail.select/issues/8">#8</a>,
+        Thanks to <strong>elPesecillo</strong>!</li>
+</ul>
+
+<h2 id="version-041---beta">Version 0.4.1 - Beta</h2>
+<ul>
+  <li>Add: The new design <code class="language-plaintext highlighter-rouge">modern-white</code> as additional stylesheet <code class="language-plaintext highlighter-rouge">tail.select-modern-white.css</code>.</li>
+  <li>Add: The <code class="language-plaintext highlighter-rouge">.scss</code> preprocessor stylesheet(-ing) (I’m new at pre-processing, and I’m not sure
+     if i’m using it right :/).</li>
+  <li>Update: Many design changed and optimizations.</li>
+  <li>Bugfix: Ignoring <code class="language-plaintext highlighter-rouge">selected</code> attribute <a href="https://github.com/pytesNET/tail.select/issues/6">#6</a>,
+        Thanks to <strong>tomasKucera</strong>!</li>
+</ul>
+
+<h2 id="version-040---beta">Version 0.4.0 - Beta</h2>
+<ul>
+  <li>Info: First Beta Version</li>
+  <li>Add: A custom event listener which allows more details / arguments.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">on()</code> method to use the new custom event listener.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">config()</code> method to get and set configurations after init.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">setCSVInput()</code> method to handle the CSV Input field.</li>
+  <li>Add: The new internal <code class="language-plaintext highlighter-rouge">trigger()</code> method which handles the events.</li>
+  <li>Add: The new default <code class="language-plaintext highlighter-rouge">createGroup()</code> and <code class="language-plaintext highlighter-rouge">createItem()</code> callback methods.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">cbLoopItem</code> and <code class="language-plaintext highlighter-rouge">cbLoopGroup</code> options, which allows to use a custom callback
+     function for the creation of options and groups within the dropdown list.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">multiSelectAll</code> and <code class="language-plaintext highlighter-rouge">multiSelectGroup</code> options, which allows to (un)select all
+     options or all options within a group!</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">walker()</code> function which replaces <code class="language-plaintext highlighter-rouge">walk()</code>.</li>
+  <li>Add: The additional class name <code class="language-plaintext highlighter-rouge">in-search</code> on search-results.</li>
+  <li>Update: The jQuery and MooTools Bindings.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">init()</code> method on <code class="language-plaintext highlighter-rouge">tailOptions</code> uses now also <code class="language-plaintext highlighter-rouge">set()</code>.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">reload()</code> method uses the same instance instead of creating a new one.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">open()</code>, <code class="language-plaintext highlighter-rouge">close()</code> and <code class="language-plaintext highlighter-rouge">toggle()</code> method accepts now one parameter, which disables
+|           the animation (if turned on).</li>
+  <li>Update: The Group will also be shown on search-results.</li>
+  <li>Update: New strings including a new string-key structure (+ updated translations).</li>
+  <li>Update: Assign HTML String method instead of Single Element Creation on <code class="language-plaintext highlighter-rouge">init()</code>.</li>
+  <li>Update: The default option for <code class="language-plaintext highlighter-rouge">height</code> has been changed to 350 (px) according to the new
+        <code class="language-plaintext highlighter-rouge">maxHeight</code> JS-based setup (replaces the CSS setup).</li>
+  <li>Update: The sort callback on the <code class="language-plaintext highlighter-rouge">walker()</code> method is now called directly instead as
+        callback within the <code class="language-plaintext highlighter-rouge">sort()</code> function!</li>
+  <li>Update: The CSS design has been modified and adapted to the new features.</li>
+  <li>Codacy: Expected ‘!==’ and instead saw ‘!=’. (eqeqeq)</li>
+  <li>Codacy: Avoid assignments in operands. (At least on if)</li>
+  <li>Codacy: ‘tailOptions’ was used before it was defined. (no-use-before-define)</li>
+  <li>Codacy: ‘i’ is already defined. (no-redeclare)</li>
+  <li>Rename: The internval variable <code class="language-plaintext highlighter-rouge">tailSelect.instances</code> has been renamed into <code class="language-plaintext highlighter-rouge">tailSelect.inst</code>.</li>
+  <li>Bugfix: Displaying of tail.select out of viewport
+        <a href="https://github.com/pytesNET/tail.select/issues/4">#4</a>, Thanks to <strong>tomasKucera</strong>!</li>
+  <li>Bugfix: The <code class="language-plaintext highlighter-rouge">items</code> option object doesn’t added a option description.</li>
+  <li>Bugfix: Don’t close the dropdown list, when playing with the <code class="language-plaintext highlighter-rouge">multiContainer</code> element.</li>
+  <li>Bugfix: Already selected items can be selected again!</li>
+  <li>Bugfix: Load Items into the <code class="language-plaintext highlighter-rouge">multiContainer</code> and <code class="language-plaintext highlighter-rouge">csvInput</code> field on soft reloads.</li>
+  <li>Deprecated: The <code class="language-plaintext highlighter-rouge">walk()</code> function has been marked as deprecated and gets removed in the future!</li>
+</ul>
+
+<h2 id="version-036---alpha">Version 0.3.6 - Alpha</h2>
+<ul>
+  <li>Hotfix: Mismatching / Faulty Search Regex on different HTML conditions.</li>
+</ul>
+
+<h2 id="version-035---alpha">Version 0.3.5 - Alpha</h2>
+<ul>
+  <li>Update: Change for loop expression.</li>
+  <li>Codacy: ‘ev’ is already defined. (no-redeclare).</li>
+  <li>Codacy: ‘ev’ used outside of binding context. (block-scoped-var).</li>
+  <li>Bugfix: Constructor Instance check.</li>
+  <li>Bugfix: Wrong Version Number.</li>
+  <li>Hotfix: Searching when data-description containes &gt; char
+        <a href="https://github.com/pytesNET/tail.select/issues/2">#2</a>, Thanks to <strong>tomasKucera</strong>!</li>
+</ul>
+
+<h2 id="version-034---alpha">Version 0.3.4 - Alpha</h2>
+<ul>
+  <li>Info: I don’t understand why some JS window/DOM-depended libraries exports their library to
+      nodeJS using <code class="language-plaintext highlighter-rouge">module.exports</code>, so I’ll just offer AMD only for the moment!</li>
+  <li>Add: The options <code class="language-plaintext highlighter-rouge">csvOutput</code> and <code class="language-plaintext highlighter-rouge">csvSeparator</code> as well as a hidden CSV input method.</li>
+  <li>Add: Support as Asynchronous Module Definition, tested with requireJS (I’m new with AMD).</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">animate</code> option is now set to <code class="language-plaintext highlighter-rouge">true</code> per default!</li>
+  <li>Update: Correct use of the labels / placeholders.</li>
+  <li>Update: The string-keys (+ the german translation).</li>
+  <li>Bugfix: Escape RegExp Characters in Search string.</li>
+</ul>
+
+<h2 id="version-033---alpha">Version 0.3.3 - Alpha</h2>
+<ul>
+  <li>Hotfix: Nothing can be selected anymore when using the search function
+        <a href="https://github.com/pytesNET/tail.select/issues/1">#1</a>, Thanks to <strong>markteunen65</strong>!</li>
+</ul>
+
+<h2 id="version-032---alpha">Version 0.3.2 - Alpha</h2>
+<ul>
+  <li>Add: jQuery bindings, tested with jQuery v.1.12.4 only!</li>
+  <li>Add: MooTools bindings, text with MooTools 1.5.2 only!</li>
+  <li>Update: The helper method <code class="language-plaintext highlighter-rouge">animate()</code> is now backward compatible with IE &gt;= 9.</li>
+  <li>Update: Add <code class="language-plaintext highlighter-rouge">Object.assign</code> check directly to the <code class="language-plaintext highlighter-rouge">clone()</code> method.</li>
+  <li>Codacy: Avoid assignments in operands.</li>
+  <li>Codacy: Use ===/!== to compare with true/false or Numbers.</li>
+  <li>Codacy: Always provide a base when using parseInt() functions.</li>
+  <li>Codacy: Unsafe assignment to innerHTML.</li>
+  <li>Codacy: Move the invocation into the parens that contain the function.</li>
+  <li>Bugfix: Wrong key assignment on the helper method <code class="language-plaintext highlighter-rouge">clone()</code>.</li>
+  <li>Bugfix: The <code class="language-plaintext highlighter-rouge">searchFocus</code> option doesn’t work on animated dropdown elements!</li>
+  <li>Bugfix: Wrong return variable on the mein IIFE function wrapper.</li>
+</ul>
+
+<h2 id="version-031---alpha">Version 0.3.1 - Alpha</h2>
+<ul>
+  <li>Info: Official support for IE &gt;= 9 starts now :(</li>
+  <li>Add: New <code class="language-plaintext highlighter-rouge">clone()</code> helper function as Fallback for IE &gt;= 9.</li>
+  <li>Add: New <code class="language-plaintext highlighter-rouge">.IE</code> helper variable for Fallback use for IE &gt;= 9.</li>
+  <li>Bugfix: Almost complete IE &gt;= 9 support, except the <code class="language-plaintext highlighter-rouge">animate</code> option.</li>
+</ul>
+
+<h2 id="version-030---alpha">Version 0.3.0 - Alpha</h2>
+<ul>
+  <li>Info: The complete script has been re-written from scratch and doesn’t depend on jQuery anymore!</li>
+  <li>Info: The default design uses vectors from GitHubs <a href="https://octicons.github.com/">Octicons</a>.</li>
+  <li>Info: The minified version is compressed with <a href="https://jscompress.com/">jsCompress</a>.</li>
+  <li>Add: A search function / field within the dropdown area, which is partly still in a test phase.</li>
+  <li>Add: A complete new interface and a complete new design (including a new demonstration).</li>
+  <li>Add: The tail helper methods: <code class="language-plaintext highlighter-rouge">hasClass()</code>, <code class="language-plaintext highlighter-rouge">addClass()</code>, <code class="language-plaintext highlighter-rouge">removeClass()</code>, <code class="language-plaintext highlighter-rouge">trigger()</code> and
+     <code class="language-plaintext highlighter-rouge">animate()</code>.</li>
+  <li>Add: The <code class="language-plaintext highlighter-rouge">tailSelect</code> prototype class handles all tail.select elements and the communication
+     between the user and the elements as well as between the <code class="language-plaintext highlighter-rouge">tailOptions</code> class.</li>
+  <li>Add: The <code class="language-plaintext highlighter-rouge">tailOptions</code> prototyping class, which manages the original options and items. This new
+     class is only responsible for the main item object collections as well as the original
+     select field. The tail.select elements are handled by the main <code class="language-plaintext highlighter-rouge">tailSelect</code> class only!</li>
+  <li>Add: A <code class="language-plaintext highlighter-rouge">search</code>, <code class="language-plaintext highlighter-rouge">searchFocus</code> and <code class="language-plaintext highlighter-rouge">searchMarked</code> option to configure the new search feature.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">bindSourceSelect</code> option, which allows to still use the source select field.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">hideSelect</code> option to hide the source select field.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">stayOpen</code> and <code class="language-plaintext highlighter-rouge">startOpen</code> option to manipulate the dropdown field.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">items</code> option to add some additional options during the initialization, the new
+     structure allows you to add and remove options also during the runtime. Use therefore
+     the methods of the <code class="language-plaintext highlighter-rouge">tailOptions</code> prototype class.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">sortItems</code> and <code class="language-plaintext highlighter-rouge">sortGroups</code> options, to sort the order of the options and the
+     option groups in the dropdown field.</li>
+  <li>Add: The new <code class="language-plaintext highlighter-rouge">animate</code> and <code class="language-plaintext highlighter-rouge">openAbove</code> methods to control the dropdown behavior.</li>
+  <li>Add: The new strings <code class="language-plaintext highlighter-rouge">searchField</code>, <code class="language-plaintext highlighter-rouge">searchEmpty</code>, and<code class="language-plaintext highlighter-rouge">selectLimit</code> has been added.</li>
+  <li>Add: A german locale file.</li>
+  <li>Update: The events has been changed into ‘tail.select::open’, ‘tail.select::close’, and
+        ‘tail.select::{state}’</li>
+  <li>Update: The complete HTML / ClassNames and CSS structure has been changed!</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">copy_class</code> option has been renamed into <code class="language-plaintext highlighter-rouge">classNames</code> and allows now also a
+        string as well as an array parameter. (You can still use <code class="language-plaintext highlighter-rouge">true</code> to copy the class
+        names from the source select field.)</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">single_deselect</code> option has been renamed into <code class="language-plaintext highlighter-rouge">deselect</code>, the behavior is the same.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">multi_limit</code> option has been renamed into <code class="language-plaintext highlighter-rouge">multiLimit</code> and requires now <code class="language-plaintext highlighter-rouge">-1</code> as
+        parameter to enable the “unlimited” selection option (-1 is the default option!).</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">multi_show_count</code> option has been renamed into <code class="language-plaintext highlighter-rouge">multiShowCount</code>, the behavior is
+        the same.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">multi_move_to</code> option has been renamed into <code class="language-plaintext highlighter-rouge">multiContainer</code> and does now ONLY
+        offer the possibility to “move” the selected options (in the form of handles) into the
+        (with an plain selector linked) container. The possibility to “move” selected options
+        to the top of the dropdown list has been removed!</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">multi_hide_selected</code> option has been renamed into <code class="language-plaintext highlighter-rouge">hideSelected</code> and doesn’t
+        require a multiple select field anymore, the rest of the behavior is the same!</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">description</code> option has been renamed into <code class="language-plaintext highlighter-rouge">descriptions</code>, the behavior is the same.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">hide_disabled</code> option has been renamed into <code class="language-plaintext highlighter-rouge">hideDisabled</code>, the behavior is almost
+        the same, except that <code class="language-plaintext highlighter-rouge">hideDisabled</code> and <code class="language-plaintext highlighter-rouge">hideSelected</code> just add a new CSS class name
+        to the main tail.select element.</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">width</code> option keeps his name, but allows now ‘auto’ (to calculate the width from
+        the source select element) and <code class="language-plaintext highlighter-rouge">null</code>, to set no width at all (default).</li>
+  <li>Update: The <code class="language-plaintext highlighter-rouge">height</code> option keeps his name, but allows now also <code class="language-plaintext highlighter-rouge">null</code> to set no maxHeight at
+        all (which is also the default, it’s may better to handle this with pure CSS).</li>
+  <li>Update: The string options <code class="language-plaintext highlighter-rouge">text_empty</code>, <code class="language-plaintext highlighter-rouge">text_limit</code> and <code class="language-plaintext highlighter-rouge">text_placeholder</code> has been moved
+        to and own core object, which is accessible through the <code class="language-plaintext highlighter-rouge">tail.select.strings</code> variable.</li>
+  <li>Remove: The jQuery support has been completely removed.</li>
+  <li>Remove: The jQuery <code class="language-plaintext highlighter-rouge">mousewheel</code> plugin has been removed.</li>
+  <li>Remove: The option and functionality behind <code class="language-plaintext highlighter-rouge">hide_on_mobile</code> and <code class="language-plaintext highlighter-rouge">hide_on_supported</code> has been
+        completely removed. There will be probably no substitute for this!</li>
+  <li>Remove: The feather icons has been replaced with the GitHub Octicons.</li>
+</ul>
+
+<h2 id="version-020---alpha">Version 0.2.0 - Alpha</h2>
+<ul>
+  <li>Info: Tested with and Includes now jQuery 1.4.0, 1.6.0 and 1.11.2</li>
+  <li>Add: (option) Specify a width</li>
+  <li>Add: (option) Auto-Disable on Mobile browsers</li>
+  <li>Add: (option) Auto-Disable on Unsupported browsers</li>
+  <li>Add: (option) Take class names from select fields</li>
+  <li>Add: 4 other functions: reload, open, close and remove</li>
+  <li>Add: Extended Class Names for each tail.Select status</li>
+  <li>Add: Prevent multi-selections on single select fields</li>
+  <li>Add: Open the select field ONLY if the left mouse button is pressed.</li>
+  <li>Update: The tail.Select design</li>
+  <li>Update: The tail.Select configuration</li>
+  <li>Update: The tail.Select HTML structure</li>
+  <li>Update: Embeds now the complete Feather icon font</li>
+  <li>Update: Feather icons are used now only via css (+ new icons are used)</li>
+  <li>Update:	A better and bigger demonstration (./demo/index.html)</li>
+  <li>Update:	Change placeholder attribute to data-placeholder</li>
+  <li>Bugfix: Open above Bug</li>
+  <li>Bugfix: Pull-Down / Pull-Up Switch-Icon Bug</li>
+  <li>Bugfix: Faulty De-Selection on Single-Select fields with optgroup</li>
+  <li>Remove: (function) “stringArray”</li>
+  <li>Remove: (function) “getIcon” and “switchIcon”</li>
+  <li>Remove: (function) Some other unused functions</li>
+  <li>Remove: (option) “icons”</li>
+  <li>Remove: (option) “multi_hide_selected”</li>
+</ul>
+
+<h2 id="version-011---alpha">Version 0.1.1 - Alpha</h2>
+<ul>
+  <li>Update: Some jQuery 1.4+ Compatibility fixes</li>
+  <li>Update: New render function with Compatibility to jQuery 1.4+</li>
+  <li>Bugfix: Optgroup-Sorting Bug</li>
+  <li>Bugfix: Few small Bugs</li>
+</ul>
+
+<h2 id="version-010---alpha">Version 0.1.0 - Alpha</h2>
+<ul>
+  <li>First Alpha Version</li>
+</ul>
+:ET

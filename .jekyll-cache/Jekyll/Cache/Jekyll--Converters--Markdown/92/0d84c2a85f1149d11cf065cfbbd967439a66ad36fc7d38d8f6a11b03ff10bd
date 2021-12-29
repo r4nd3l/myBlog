@@ -1,0 +1,19 @@
+I"r<h2 id="jenkins-update">Jenkins update</h2>
+<hr />
+
+<ul>
+  <li>VNC -&gt; Jenkins Server - http://localhost:8080/</li>
+  <li>Download the jenkins.war file - provided by the notify</li>
+  <li>Use the terminal to overwrite the exist file like:
+    <blockquote>
+      <p>$ sudo mv /home/pi/Downloads/jenkins.war /usr/share/jenkins/jenkins.war</p>
+    </blockquote>
+  </li>
+  <li>Then restart the jenkins server - http://localhost:8080/safeRestart</li>
+  <li>Backup library:
+    <blockquote>
+      <p><a href="http://download.openpkg.org/components/cache/jenkins/">OpenPKG Project: Download</a></p>
+    </blockquote>
+  </li>
+</ul>
+:ET

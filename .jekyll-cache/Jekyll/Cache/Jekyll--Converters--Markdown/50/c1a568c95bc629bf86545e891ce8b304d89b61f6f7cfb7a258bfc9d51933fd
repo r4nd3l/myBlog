@@ -1,0 +1,29 @@
+I"4<blockquote>
+  <p>$ ps aux</p>
+</blockquote>
+
+<h5 id="example">Example</h5>
+<blockquote>
+  <table>
+    <tbody>
+      <tr>
+        <td>$ ps aux</td>
+        <td>grep apache</td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>mate      3564  0.0  0.0  23092  1036 pts/0    S+   13:43   0:00 grep –color=auto apache</p>
+<blockquote>
+  <p>$ kill &lt; PID &gt;
+$ kill 3564</p>
+</blockquote>
+
+<p>or</p>
+<blockquote>
+  <h2 id="-kill--9-3564">$ kill -9 3564</h2>
+</blockquote>
+
+<p>Select the desired PID number to use the command: “kill” or “kill -9”</p>
+:ET

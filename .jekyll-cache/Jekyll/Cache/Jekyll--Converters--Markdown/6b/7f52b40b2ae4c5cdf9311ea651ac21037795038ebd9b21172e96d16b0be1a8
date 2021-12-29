@@ -1,0 +1,100 @@
+I"-<h1 id="useful-laravel-commands-xampp">Useful Laravel commands (XAMPP)</h1>
+<hr />
+
+<h4 id="terminal-commands-in-the-directory">Terminal commands in the directory</h4>
+<blockquote>
+  <p>$ sudo apt install composer
+$ composer update
+$ sudo apt-get install php7.2-mysql
+$ sudo apt-get install phpunit
+$ sudo apt-get install php-mbstring</p>
+
+  <h5 id="optional-for-permission-issues">Optional for permission issues</h5>
+  <p>$ sudo chmod -R 755 /opt/lampp/htdocs/Git
+$ php /usr/bin/composer update</p>
+
+</blockquote>
+
+<h2 id="isntall-and-run-xampp-by-terminal">Isntall and run XAMPP by terminal</h2>
+<blockquote>
+  <p>$ cd Downloads
+$ sudo chmod +x xampp-linux-x64-7.2.3-0-installer.run
+$ sudo ./xampp-linux-x64-7.2.3-0-installer.run</p>
+</blockquote>
+
+<hr />
+
+<h2 id="configure-apache---if-issued">Configure Apache - if issued</h2>
+<p>(Stop from the root of the apache)</p>
+<blockquote>
+  <p>$ sudo /etc/init.d/apache2 stop</p>
+</blockquote>
+
+<p>or</p>
+
+<blockquote>
+  <p>$ sudo service apache2 stop</p>
+</blockquote>
+
+<p>or</p>
+
+<blockquote>
+  <p>$ sudo systemctl stop apache2.service</p>
+</blockquote>
+
+<p>or</p>
+
+<blockquote>
+  <p>$ sudo apache2ctl stop</p>
+</blockquote>
+
+<p>(Then start from the root of the xampp)</p>
+<blockquote>
+  <h2 id="-sudo-optlamppxampp-start">$ sudo /opt/lampp/xampp start</h2>
+  <h3 id="if-all-of-the-above-are-not-working-to-shut-it-down">If all of the above are not working to shut it down</h3>
+  <p>$ ps aux | grep http
+$ sudo kill &lt; Pid &gt;</p>
+</blockquote>
+
+<p>Moreover (if the issue is  - /etc/lighttpd/lighttpd.conf)</p>
+<blockquote>
+  <p>$ sudo update-rc.d -f lighttpd remove</p>
+</blockquote>
+
+<p>This is a script which will remove the lighttpd start up script</p>
+
+<hr />
+
+<h3 id="if-it-is-still-not">If it is still not</h3>
+<p>The problem is aussmingly the “lighttpd” which is located in “/etc/init.d/lighttpd”</p>
+<blockquote>
+  <p>$ sudo /etc/init.d/lighttpd stop</p>
+</blockquote>
+
+<p>Disable startup on boot</p>
+<blockquote>
+  <p>$ sudo systemctl disable lighttpd</p>
+</blockquote>
+
+<hr />
+
+<h4 id="auto-starting-on-boot">Auto starting on boot</h4>
+<p>This disables apache2 at startup but is not removed so it can be enabled again</p>
+<blockquote>
+  <p>$ sudo update-rc.d apache2 disable</p>
+</blockquote>
+
+<p>To remove the apache2 startup scripts do the following</p>
+<blockquote>
+  <h2 id="-sudo-update-rcd--f--apache2-remove">$ sudo update-rc.d -f  apache2 remove</h2>
+</blockquote>
+
+<h4 id="disable-myssql-upstart">Disable MysSql upstart</h4>
+<p>This disable the mysql at startup</p>
+<blockquote>
+  <h2 id="-sudo-systemctl-disable-mysqlservice">$ sudo systemctl disable mysql.service</h2>
+</blockquote>
+
+<h5 id="note">Note</h5>
+<p>Table in the Database should be set via XAMPP Apache Manager before the terminal run the ‘startmysql’ command - otherwiser the /phpmyadmin will be unreachable!</p>
+:ET

@@ -1,0 +1,125 @@
+I"<h3 id="youtube-dl">YouTube-dl</h3>
+
+<p>Application : <a href="https://youtube-dl.org/" title="youtube-dl.org">youtube-dl</a></p>
+
+<p>Download Multiple Courses At Once without typing much.</p>
+
+<p>Download <code class="language-plaintext highlighter-rouge">youtube-dl.exe</code></p>
+
+<ol>
+  <li>Add location of <code class="language-plaintext highlighter-rouge">youtube-dl.exe</code> to path variable</li>
+  <li>Create a <code class="language-plaintext highlighter-rouge">youtube-dl.conf</code> file and put it -</li>
+</ol>
+
+<ul>
+  <li>On Windows <code class="language-plaintext highlighter-rouge">C:\Users\&lt;user name&gt;\youtube-dl.conf</code></li>
+  <li>On Linux <code class="language-plaintext highlighter-rouge">/etc/youtube-dl.conf</code></li>
+</ul>
+
+<p>put the following lines in <code class="language-plaintext highlighter-rouge">youtube-dl.conf</code></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-u &lt;Username&gt; 
+-p &lt;Password&gt; 
+-i 
+-c 
+--no-warnings 
+--console-title 
+--batch-file='batch-file.txt' 
+--max-sleep-interval 80 
+--min-sleep-interval 60 
+-o '%(playlist_title)s/%(chapter_number)s - %(chapter)s/%(playlist_index)s-%(title)s.%(ext)s' 
+-f 'best[height&lt;=720]/worst[height&gt;720]' 
+</code></pre></div></div>
+
+<p>Put <code class="language-plaintext highlighter-rouge">batch-file.txt</code> where you want to download the courses.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://app.pluralsight.com/library/courses/project-2016-business-professionals 
+
+https://app.pluralsight.com/library/courses/moving-technical-professional-management 
+
+https://app.pluralsight.com/library/courses/it-outsourcing-running-initiative 
+</code></pre></div></div>
+
+<p>Suppose you put the <code class="language-plaintext highlighter-rouge">batch-file.txt</code> on <code class="language-plaintext highlighter-rouge">D:\Downloads\batch-file.txt</code></p>
+
+<p>Open command prompt and go to <code class="language-plaintext highlighter-rouge">D:\Downloads</code> and run</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D:\Downloads&gt; youtube-dl 
+</code></pre></div></div>
+
+<p>Now all your courses will be downloaded on <code class="language-plaintext highlighter-rouge">D:\Downloads</code></p>
+
+<p>From now on just update the URLs of the courses you want to download in <code class="language-plaintext highlighter-rouge">batch-file.txt</code> file, Open command prompt and go to <code class="language-plaintext highlighter-rouge">D:\Downloads</code> and run</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>D:\Downloads&gt; youtube-dl 
+</code></pre></div></div>
+
+<p>Important: Pluralsight may block your account if you download too many courses at once. 3–5 is a good size if the course size is average.</p>
+
+<p>PS: Please let me know if you face any problem following the procedure.</p>
+
+<p>Update 1:</p>
+
+<ol>
+  <li>Please Use Cookies instead of</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-u &lt;Username&gt; 
+-p &lt;Password&gt; 
+</code></pre></div></div>
+
+<p>The cookies switch should be something like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--cookies 'cookies.txt'
+</code></pre></div></div>
+
+<p>You can download the cookies from the browser and place it in the directory where you want to run <code class="language-plaintext highlighter-rouge">youtube-dl</code>. Google how to download cookies.txt for the browser you are using.</p>
+
+<p>2. Make Sure Your Browser User Agent &amp; youtube-dl User Agent is same.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--user-agent "$UserAgent" 
+</code></pre></div></div>
+
+<p>To get your current browser user agent go to <a href="https://www.whatismybrowser.com/detect/what-is-my-user-agent" title="www.whatismybrowser.com">What is my User Agent?</a></p>
+
+<p>User agents look something like:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Mozilla/5.0 (X11; Linux i686; rv:21.0) Gecko/20100101 Firefox/21.0 
+
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.157 Safari/537.36 
+</code></pre></div></div>
+
+<p>Now, use it with <code class="language-plaintext highlighter-rouge">---user-agent</code>.</p>
+
+<p>3. It might be a little inconvenient but you have to replace:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-i 
+-c 
+</code></pre></div></div>
+
+<p>With</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--abort-on-error 
+</code></pre></div></div>
+
+<p>These steps are to make sure you do not get blocked.</p>
+
+<p>So the resulting <code class="language-plaintext highlighter-rouge">youtube-dl.conf</code> becomes:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>--abort-on-error 
+--no-warnings 
+--console-title 
+--batch-file='batch-file.txt' 
+--user-agent "Mozilla/5.0 (X11; Linux i686; rv:21.0) Gecko/20100101 Firefox/21.0" 
+--cookies 'cookies.txt' 
+--socket-timeout 10 
+--retries 10 
+--continue 
+--fragment-retries 10 
+--min-sleep-interval 60 
+--max-sleep-interval 80 
+-f 'best[height&lt;=720]/worst[height&gt;720]' 
+-o '%(playlist_title)s/%(chapter_number)s - %(chapter)s/%(playlist_index)d-%(title)s.%(ext)s' 
+</code></pre></div></div>
+
+<p>Still there are few issues remaining. I will In-Shah-Allah get back to you as soon as I get all the answers.</p>
+:ET
