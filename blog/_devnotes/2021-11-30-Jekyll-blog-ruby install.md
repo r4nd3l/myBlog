@@ -3,7 +3,6 @@ layout: post
 title: Jekyll blog - ruby install
 description: "Jekyll on linux environment to install properly"
 tags: [ Jekyll , linux , environment, install ]
-categories: [Linux, Code snippet]
 ---
 
 Then reinstall ruby using rbenv and ruby-build according to their docs:

@@ -3,7 +3,6 @@ layout: post
 title: PHP extension check on linux 
 description: "List all the php extensions on linux environment"
 tags: [ PHP , linux , environment, install ]
-categories: [PHP, Linux, Code snippet]
 ---
 
 ### Php extension check

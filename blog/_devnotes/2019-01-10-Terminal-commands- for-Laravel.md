@@ -3,7 +3,6 @@ layout: post
 title: "Terminal commands for Laravel"
 description: "Creating environment in Laravel"
 tags: [PHP, Shell, Laravel, Web, Development, Linux]
-categories: [PHP, Web, Development, Linux]
 ---
 
 

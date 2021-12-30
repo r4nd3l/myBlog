@@ -3,7 +3,6 @@ layout: post
 title: Split ZIP files 
 description: "How to split ZIP archive into multiple blocks of a specific size"
 tags: [ ZIP , shell , script ]
-categories: [Command, Linux]
 ---
 
 ```

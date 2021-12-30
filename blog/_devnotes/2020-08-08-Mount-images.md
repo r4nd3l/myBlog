@@ -3,7 +3,6 @@ layout: post
 title: "Mount images"
 description: "How to mount images on Linux via terminal"
 tags: [ Linux , command , shell ]
-categories: [Shell, command, Linux]
 ---
 
 ## Mount images 

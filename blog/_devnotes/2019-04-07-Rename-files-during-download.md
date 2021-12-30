@@ -3,7 +3,6 @@ layout: post
 title: "Rename files during download"
 description: "A simple way to rename the file while downloading with Wget"
 tags: [ Shell, Linux, Command ]
-categories: [Shell, Linux, Command]
 ---
 
 

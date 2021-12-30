@@ -3,7 +3,6 @@ layout: post
 title: "Create launcher"
 description: "Shortlink in linux (Ubuntu)"
 tags: [ Shell, Command, Linux]
-categories: [ Shell, Command, Linux]
 ---
 
 

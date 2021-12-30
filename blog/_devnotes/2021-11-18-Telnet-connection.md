@@ -3,7 +3,6 @@ layout: post
 title: Telnet connection
 description: "Practical way to save telnet session into a file"
 tags: [ Linux , Shell , command, telnet ]
-categories: [Shell, Linux, Command]
 ---
 
 ### Telnet connection - save session into file

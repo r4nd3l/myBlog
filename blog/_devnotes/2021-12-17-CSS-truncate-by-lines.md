@@ -3,7 +3,6 @@ layout: post
 title: CSS truncate by lines 
 description: "How to truncate text by lines with CSS"
 tags: [ CSS , truncate , text ]
-categories: [CSS, CSS ninja]
 ---
 
 # CSS truncate by lines

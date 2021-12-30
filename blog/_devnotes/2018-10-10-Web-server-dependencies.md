@@ -3,7 +3,6 @@ layout: post
 title: "Web server dependencies"
 description: "Install and setup web dependencies via terminal on linux"
 tags: [ Shell, Command, Linux, APT packages]
-categories: [ Command, Linux, APT]
 ---
 
 

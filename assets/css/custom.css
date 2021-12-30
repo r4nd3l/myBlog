@@ -86,3 +86,11 @@ div.highlight {
         display: -webkit-box;
     }
 }
+
+/* GitHub Repo API - Custom settings */
+.repo-date{
+    font-family: monospace;
+    width: 10ch;
+    overflow: hidden;
+    white-space: nowrap;
+}

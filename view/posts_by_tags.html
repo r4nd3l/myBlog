@@ -1,0 +1,95 @@
+---
+layout: page
+title: Tags
+description: "Categorized collections of blog posts based on assigned tags"
+---
+
+<!-- Tags -->
+<section class="col-span-12">
+  <h1 class="text-2xl text-gray-500 mt-8">{{ page.title }}</h1>  
+  <small class="truncate mb-4">{{ page.description }}</small>
+  <hr class="mb-6">
+</section>
+
+<!-- myBlogs -->
+<section class="col-span-12">
+  <h2 class="text-xl font-medium">{% assign myblog = site.pages | where: 'name', 'myblog.html' | first %}{{ myblog.title }} tags</h2>
+  <div class="grid grid-cols-12 gap-4 flex">
+    {% assign tags =  site.myblog | map: 'tags' | join: ','  | split: ',' | uniq %}
+    {% for tag in tags %}
+      <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 my-3">
+        <small class=""><i class="fas fa-hashtag text-teal"></i>{{ tag }}</small>
+        <ul>
+        {% for myblog in site.myblog %}
+          {% if myblog.tags contains tag %}
+          <li><a href="{{ site.baseurl }}{{ myblog.url }}" class="text-lg text-gray-400 hover:text-gray-500">{{ myblog.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+  <hr class="my-6">
+</section>
+
+<!-- DevNotes -->
+<section class="col-span-12">
+  <h2 class="text-xl font-medium">{% assign devnotes = site.pages | where: 'name', 'devnotes.html' | first %}{{ devnotes.title }} tags</h2>
+  <div class="grid grid-cols-12 gap-4 flex">
+    {% assign tags =  site.devnotes | map: 'tags' | join: ','  | split: ',' | uniq %}
+    {% for tag in tags %}
+      <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 my-3">
+        <small class=""><i class="fas fa-hashtag text-teal"></i>{{ tag }}</small>
+        <ul>
+        {% for devnotes in site.devnotes %}
+          {% if devnotes.tags contains tag %}
+          <li><a href="{{ site.baseurl }}{{ devnotes.url }}" class="text-lg text-gray-400 hover:text-gray-500">{{ devnotes.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+  <hr class="my-6">
+</section>
+
+<!-- Hobbies -->
+<section class="col-span-12">
+  <h2 class="text-xl font-medium">{% assign hobbies = site.pages | where: 'name', 'hobbies.html' | first %}{{ hobbies.title }} tags</h2>
+  <div class="grid grid-cols-12 gap-4 flex">
+    {% assign tags =  site.hobbies | map: 'tags' | join: ','  | split: ',' | uniq %}
+    {% for tag in tags %}
+      <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 my-3">
+        <small class=""><i class="fas fa-hashtag text-teal"></i>{{ tag }}</small>
+        <ul>
+        {% for hobbies in site.hobbies %}
+          {% if hobbies.tags contains tag %}
+          <li><a href="{{ site.baseurl }}{{ hobbies.url }}" class="text-lg text-gray-400 hover:text-gray-500">{{ hobbies.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+  <hr class="my-6">
+</section>
+
+<!-- About -->
+<section class="col-span-12">
+  <h2 class="text-xl font-medium">{% assign about = site.pages | where: 'name', 'about.html' | first %}{{ about.title }} tags</h2>
+  <div class="grid grid-cols-12 gap-4 flex">
+    {% assign tags =  site.about | map: 'tags' | join: ','  | split: ',' | uniq %}
+    {% for tag in tags %}
+      <div class="col-span-12 sm:col-span-6 lg:col-span-4 xl:col-span-3 my-3">
+        <small class=""><i class="fas fa-hashtag text-teal"></i>{{ tag }}</small>
+        <ul>
+        {% for about in site.about %}
+          {% if about.tags contains tag %}
+          <li><a href="{{ site.baseurl }}{{ about.url }}" class="text-lg text-gray-400 hover:text-gray-500">{{ about.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
+</section>

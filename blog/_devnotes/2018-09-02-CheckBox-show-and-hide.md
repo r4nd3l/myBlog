@@ -3,7 +3,6 @@ layout: post
 title: "CheckBox via jQuery"
 description: "SCheckBox - show and hide box with jQuery"
 tags: [ Web, Development, JavaScript, jQuery]
-categories: [ Web, Development, JavaScript]
 ---
 
 HTML:

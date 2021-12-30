@@ -3,7 +3,6 @@ layout: post
 title: "Fix Grav folder permission"
 description: "Handy way to fix folder permission in Grav CMS on linux"
 tags: [ Linux , Shell , command ]
-categories: [Shell, Linux, Command]
 ---
 
 ## Fix Grav folder permission setup

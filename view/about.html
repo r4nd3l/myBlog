@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-description: My personal background how I became a web developer
+description: "My personal journey to becoming a front-end web and multimedia developer"
 ---
 
 <!-- about -->
@@ -11,11 +11,15 @@ description: My personal background how I became a web developer
   <hr class="">
 </section>
 
-{% for item in site.about %}
+{% assign about = site.about | sort: 'date' | reverse %}
+{% for item in about %}
   <section class="col-span-12 bg-gray-50 rounded-lg border border-solid border-gray-100 hover:border-gray-300">
     <a href="{{ item.url }}">
       <div class="p-4">
-        <h2 class="text-2xl font-medium">{{ item.title }}</h2>
+        <div class="grid lg:flex md:justify-between">
+          <h2 class="text-2xl font-medium">{{ item.title }}</h2>
+          <small class="text-gray-400"><i class="far fa-calendar-check mr-1 text-teal"></i>{{ item.date | date_to_long_string }}</small>
+        </div>
         <div class="grid xl:flex justify-between">
           <p class="truncate-2-line md:truncate-1-line pr-4 xl:pr-16">{{ item.description }}</p>
           <span class="flex flex-wrap xl:flex-nowrap items-end mt-2 xl:mt-0">

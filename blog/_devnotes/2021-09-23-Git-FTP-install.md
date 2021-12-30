@@ -3,7 +3,6 @@ layout: post
 title: Split ZIP files 
 description: "Install and setup git-ftp on Linux"
 tags: [ Git , shell , script ]
-categories: [Command, Linux]
 ---
 
 Git-FTP install 

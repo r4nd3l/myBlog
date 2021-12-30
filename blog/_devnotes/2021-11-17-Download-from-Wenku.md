@@ -3,7 +3,6 @@ layout: post
 title: Dowload from Wenku
 description: "How to download from Wenku in a PDF format"
 tags: [ Python , PDF , script ]
-categories: [Python, Linux]
 ---
 
 ### Download from Wenku

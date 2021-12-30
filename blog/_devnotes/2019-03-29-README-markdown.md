@@ -3,7 +3,6 @@ layout: post
 title: "README markdown template"
 description: "Markdown template for README.md"
 tags: [Markdown, Web, Development]
-categories: [Document, Markdown, Web, Development]
 ---
 
 

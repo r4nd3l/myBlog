@@ -3,7 +3,6 @@ layout: post
 title: "Get even numbers with VanillaJS"
 description: "Simple VanillaJS function to console out even numbers"
 tags: [ Web, Development, JavaScript]
-categories: [ Web, Development, JavaScript]
 ---
 
 

@@ -3,7 +3,6 @@ layout: post
 title: "Unity Launcher"
 description: "How to setup Ubuntu unity lanucher"
 tags: [Shell, Linux, Code snippet]
-categories: [Shell, Linux, Code snippet]
 ---
 
 

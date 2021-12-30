@@ -3,7 +3,6 @@ layout: post
 title: "Using CSS features queries"
 description: "CSS features like vh, @supports, etc"
 tags: [ CSS, Web, Development ]
-categories: [CSS, CSS ninja, Code snippet]
 ---
 
 

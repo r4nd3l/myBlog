@@ -3,7 +3,6 @@ layout: post
 title: "Raspberry Pi 3 B+"
 description: "Useful commands for RPI3 in general"
 tags: [ Linux , Shell , command, terminal ]
-categories: [Shell, Linux, Command]
 ---
 
 # Raspberry Pi 3 B+

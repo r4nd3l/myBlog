@@ -3,7 +3,6 @@ layout: post
 title: "Jenkins update"
 description: "Update Jenkins (open source automation server) on Raspberry Pi"
 tags: [ Linux , localhost , VNC ]
-categories: [Shell, Web, VNC]
 ---
 
 ## Jenkins update 

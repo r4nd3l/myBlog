@@ -3,7 +3,6 @@ layout: post
 title: "Exclude packages from apt-get upgrade"
 description: "Control the APT package manager list to mark which to download or to be hold"
 tags: [ Linux , Shell , command ]
-categories: [Shell, Linux, Command]
 ---
 
 

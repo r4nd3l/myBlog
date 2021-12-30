@@ -3,7 +3,6 @@ layout: post
 title: "Convert video files"
 description: "On Ubuntu use terminal to convert video files with ffmpeg"
 tags: [ Linux , command , shell ]
-categories: [Shell, command, Linux]
 ---
 
 

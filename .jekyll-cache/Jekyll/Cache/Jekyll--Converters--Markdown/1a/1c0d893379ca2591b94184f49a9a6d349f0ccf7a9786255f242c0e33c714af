@@ -1,0 +1,15 @@
+I"�<h6 id="august-2020---may-2021">August 2020 - May 2021</h6>
+
+<h5 id="happyhelp-non-profit-public-utility-ltd">HappyHelp Non-profit public utility ltd</h5>
+
+<p>Hungary - Szeged</p>
+
+<p>“save the day” project - setting up a new system from scratch to migrate old websites and also produce new ones</p>
+
+<ul>
+  <li>Flat-file CMS under the hood</li>
+  <li>Flexible Twig templating engine</li>
+  <li>Mardown based database</li>
+  <li>Data-serialization built with YAML</li>
+</ul>
+:ET

@@ -3,7 +3,6 @@ layout: post
 title: "CHANGELOG markdown template"
 description: "Markdown template for CHANGELOG.md"
 tags: [Markdown, Web, Development]
-categories: [Document, Markdown, Web, Development]
 ---
 
 

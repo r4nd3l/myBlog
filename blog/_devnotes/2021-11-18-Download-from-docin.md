@@ -3,7 +3,6 @@ layout: post
 title: Dowload from docin
 description: "How to download from Docin in a PDF format"
 tags: [ Python , PDF , script ]
-categories: [Python, Linux]
 ---
 
 ### Download from docin.com

@@ -3,7 +3,6 @@ layout: post
 title: "Hide mounted drives"
 description: "Practical way to hide mounted drives on Linux via terminal"
 tags: [ Linux , Shell , command, terminal ]
-categories: [Shell, Linux, Command]
 ---
 
 # Hide Mounted Drives

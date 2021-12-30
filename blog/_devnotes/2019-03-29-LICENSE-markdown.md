@@ -3,7 +3,6 @@ layout: post
 title: "LICENSE markdown template"
 description: "Markdown template for LICENSE.md"
 tags: [Markdown, Web, Development]
-categories: [Document, Markdown, Web, Development]
 ---
 
 

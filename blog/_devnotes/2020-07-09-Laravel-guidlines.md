@@ -3,7 +3,6 @@ layout: post
 title: "Laravel guidelines"
 description: "Useful commands and tips to use Laravel via terminal"
 tags: [ Linux , localhost , Laravel, composer ]
-categories: [PHP, Web, Linux]
 ---
 
 ## Laravel guidelines

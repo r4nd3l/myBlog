@@ -3,7 +3,6 @@ layout: post
 title: "30 CSS Selectors"
 description: "Wide variety of CSS selectors, special ones as well"
 tags: [ CSS , selector ]
-categories: [CSS, CSS ninja, Code snippet]
 ---
 # 30 CSS Selectors
 >Source: [The 30 CSS Selectors You Must Memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)

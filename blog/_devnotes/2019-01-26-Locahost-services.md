@@ -3,7 +3,6 @@ layout: post
 title: "Localhost services"
 description: "Enable localhost services in Linux"
 tags: [ Linux, Shell, Command ]
-categories: [Linux, Shell, Command]
 ---
 
 

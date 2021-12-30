@@ -3,7 +3,6 @@ layout: post
 title: "Apple HFS/HFS+ Ubuntu"
 description: "How to mount Apple HFS/HFS+ drives on Ubuntu with write permission"
 tags: [ Linux , Shell , command, Apple ]
-categories: [Shell, Linux, Command]
 ---
 
 ## Apple hfs/hfs+ Ubuntu

@@ -3,7 +3,6 @@ layout: post
 title: "Trigger event with jQuery"
 description: "Trigger event when user scroll to specific element - with jQuery"
 tags: [ Web, Development, JavaScript]
-categories: [ Web, Development, JavaScript]
 ---
 
 jQuery:

@@ -3,7 +3,6 @@ layout: post
 title: "YouTube dl setup"
 description: "Install YouTube dl on Linux environment to download videos from YouTube"
 tags: [ Linux , Shell , command, YouTube ]
-categories: [Shell, Linux, Command]
 ---
 
 ### YouTube-dl

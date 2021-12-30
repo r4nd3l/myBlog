@@ -3,7 +3,6 @@ layout: post
 title: "Selecting HTML5"
 description: "Ids and classes names that start with a number in CSS"
 tags: [ CSS, Web, Development ]
-categories: [CSS, Web, Development]
 ---
 
 

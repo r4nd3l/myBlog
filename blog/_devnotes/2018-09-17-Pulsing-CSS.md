@@ -3,7 +3,6 @@ layout: post
 title: "Pulsing with CSS"
 description: "Pulsing elements via CSS"
 tags: [ Web, Development, CSS]
-categories: [ Web, Development, CSS]
 ---
 
 HTML:

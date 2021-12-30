@@ -3,7 +3,6 @@ layout: post
 title: "Font features settings"
 description: "OpenType fonts - features settings"
 tags: [ OpenType, Linux ]
-categories: [OpenType, Linux]
 ---
 
 

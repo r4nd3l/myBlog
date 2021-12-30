@@ -3,7 +3,6 @@ layout: post
 title: "Web service email sample"
 description: "Web developer service email sample to notify users "
 tags: [Email, Web, Development]
-categories: [Document, Web, Development]
 ---
 
 ### Web developer service - email sample

@@ -3,7 +3,6 @@ layout: post
 title: "Instagram feed"
 description: "Shortlink how to use Instagram API in a custom way"
 tags: [ Linux , Shell , command, Instagram, Development ]
-categories: [JavaScript, Shell, Linux, Command]
 ---
 
 

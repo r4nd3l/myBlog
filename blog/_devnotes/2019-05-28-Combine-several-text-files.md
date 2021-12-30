@@ -3,7 +3,6 @@ layout: post
 title: "Combine files in UNIX"
 description: "How to combine serveral text files into a single file in UNIX"
 tags: [ Linux , command , shell ]
-categories: [Shell, web, Linux]
 ---
 
 ### Combine several text files into a single file in Unix

@@ -3,7 +3,6 @@ layout: post
 title: "Set PhpMyAdmin"
 description: "Way to set phpmyadmin to listen only on localhost"
 tags: [ Linux , command , shell ]
-categories: [Shell, command, Linux]
 ---
 
 

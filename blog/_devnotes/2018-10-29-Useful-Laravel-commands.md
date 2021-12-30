@@ -3,7 +3,6 @@ layout: post
 title: "Useful Laravel commands"
 description: "Handy commands for Laravel in terminal"
 tags: [PHP, Shell, Terminal, Web, Development, Linux]
-categories: [PHP, Shell, Terminal, Web, Development, Linux]
 ---
 
 # Useful Laravel commands (XAMPP)

@@ -3,7 +3,6 @@ layout: post
 title: "Ubuntu terminal commands"
 description: "Useful shortlinks and tips in Ubuntu terminal"
 tags: [ Linux , Shell , command ]
-categories: [Shell, Linux, Command]
 ---
 
 # Ubuntu terminal commands

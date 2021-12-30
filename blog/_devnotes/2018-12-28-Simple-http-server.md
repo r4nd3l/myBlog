@@ -3,7 +3,6 @@ layout: post
 title: "Simple HTTP server"
 description: "Host a simple HTTP server via terminal with python"
 tags: [ Python, Linux , command , shell ]
-categories: [Shell, command, Python, Linux]
 ---
 
 

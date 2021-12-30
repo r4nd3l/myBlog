@@ -3,7 +3,6 @@ layout: post
 title: "Create symbolic link"
 description: "How to create a symbolic link in Linux"
 tags: [ Linux , Shell , command ]
-categories: [Shell, Linux, Command]
 ---
 
 ## Create The Symbolic Link

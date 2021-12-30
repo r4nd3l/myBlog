@@ -3,7 +3,6 @@ layout: post
 title: "Download websites"
 description: "Shell command in linux to download website(s)"
 tags: [ Linux , Shell , command ]
-categories: [Shell, Linux, Command]
 ---
 
 ###### Download websites/ website copier

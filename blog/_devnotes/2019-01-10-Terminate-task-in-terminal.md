@@ -3,7 +3,6 @@ layout: post
 title: "Terminate task in terminal"
 description: "Kill/Shut down process via terminal"
 tags: [ Shell, Command, Linux]
-categories: [ Command, Linux]
 ---
 
 >$ ps aux 

@@ -3,7 +3,6 @@ layout: post
 title: "UFW firewall"
 description: "Setup and configure UFW firewall"
 tags: [ Shell, Command, Linux]
-categories: [ Command, Linux]
 ---
 
 # Ufw setup/configuration
