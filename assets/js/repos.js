@@ -16,9 +16,9 @@ for (let i=1; i < pages; i++) {
                 <small class="text-gray-400 flex items-baseline"><i class="far fa-calendar-check mr-1 text-teal"></i><p class="repo-date">${item.created_at}</p></small>
               </div>
               <div class="grid xl:flex justify-between">
-                <p class="truncate-2-line md:truncate-1-line pr-4 xl:pr-16">${item.description}</p>
+                <p class="truncate-2-line md:truncate-1-line h-full pr-4 xl:pr-16">${item.description}</p>
                 <span class="flex flex-wrap xl:flex-nowrap items-end mt-2 xl:mt-0">
-                  <small class="flex text-gray-400 mr-4 xl:mr-0 xl:ml-4"><small>Mainly</small><i class="fas fa-hashtag py-0.5 text-teal ml-2"></i>${item.language}</small>
+                  <small class="flex whitespace-nowrap text-gray-400 mr-4 xl:mr-0 xl:ml-4"><small>Mainly</small><i class="fas fa-hashtag py-0.5 text-teal ml-2"></i>${item.language}</small>
                 </span>
               </div>
             </div>

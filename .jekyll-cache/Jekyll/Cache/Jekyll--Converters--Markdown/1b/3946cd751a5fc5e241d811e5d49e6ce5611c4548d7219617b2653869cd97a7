@@ -1,0 +1,72 @@
+I"—<p>Giving a new life for Lumia 640 (Microsoft Windows Phone)</p>
+
+<p>Lumia 640</p>
+<ul>
+  <li>https://www.windowslatest.com/2017/08/27/uninstall-default-apps-in-windows-10-mobile/</li>
+  <li>https://www.windowscentral.com/how-to-uninstall-oem-app-windows-phone</li>
+</ul>
+
+<p>Lumia 640 - Win10</p>
+<ul>
+  <li>https://youtu.be/E_ZKLPFGkYs</li>
+</ul>
+
+<p>Lumia 640 - WP8 to WP10</p>
+<ul>
+  <li>https://handsontek.net/update-windows-phone-8-1-windows-mobile-10/</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>OTC Tool Server Issues?! -&gt; FIX HERE
+
+For 32-bit applications that are running on 32-bit OSs and for 64-bit applications that are running on 64-bit OSs, update the following subkey values:
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+
+For 32-bit applications that are running on 64-bit OSs, update the following subkey values:
+[HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework\v2.0.50727]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+[HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\.NETFramework\v4.0.30319]
+      "SystemDefaultTlsVersions" = dword:00000001
+      "SchUseStrongCrypto" = dword:00000001
+</code></pre></div></div>
+
+<ul>
+  <li>https://windowsreport.com/windows-10-mobile-registry/</li>
+  <li>http://allaboutwindowsphone.com/features/item/23400_How_to_Rescue_an_old_Insiders-.php</li>
+  <li>https://www.windowslatest.com/2016/12/02/enable-continuum-support-lumia-phone/</li>
+  <li>https://lowendmac.com/2016/microsoft-lumia-435-upgraded-to-windows-10-mobile/</li>
+</ul>
+
+<p>Lumia 640 - Windows 10 Mobile Build 14393.1066 Changelog</p>
+<ul>
+  <li>https://thewincentral.com/windows-10-mobile-build-14393-1066-live-now-non-insiders-changelog/</li>
+</ul>
+
+<p>Lumia 640 - Install appx without trusted certificate</p>
+<ul>
+  <li>https://stackoverflow.com/questions/23812471/installing-appx-without-trusted-certificate</li>
+</ul>
+
+<p>Lumia 640 - build numbers</p>
+<ul>
+  <li>https://en.wikipedia.org/wiki/Windows_10_Mobile_version_history</li>
+</ul>
+
+<p>Lumia 640 - Deplox Tool</p>
+<ul>
+  <li>http://bsubramanyamraju.blogspot.com/2016/02/windows-10-uwp-apps-how-to-deploy-appx.html</li>
+  <li>
+    <p>https://developer.microsoft.com/en-US/windows/downloads/windows-sdk/</p>
+  </li>
+  <li>https://docs.microsoft.com/en-us/previous-versions/windows/apps/mt203806(v=vs.140)?redirectedfrom=MSDN</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DeployAppx.exe tool from Windows 10 IoT Core images. That tool apparently works correctly on phones as well and it can list, uninstall, reinstall, sideload apps as well as register an app directly from extracted files in a directory. Using this method, it is almost always possible to install the app again directly from Store app if you would like to install it again.
+</code></pre></div></div>
+
+:ET
