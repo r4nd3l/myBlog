@@ -21,3 +21,8 @@ During the Cisco Networking Academy® course, administered by the undersigned in
 - Implement WAN links
 
 Technological literacy is more important today than ever before, and Cisco is proud to provide you with the knowledge and skills necessary to build and maintain computers.
+
+## CCNA explained
+CCNA certification proves you have what it takes to navigate the ever-changing landscape of IT. CCNA exam covers networking fundamentals, IP services, security fundamentals, automation and programmability. Designed for agility and versatility, CCNA validates that you have the skills required to manage and optimize today's most advanced networks.
+
+The CCNA training course and exam give you the foundation to take your career in any direction. When you certify with Cisco, you are living proof of the standard and rigor that businesses recognize and trust to meet and exceed market demands.

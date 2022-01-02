@@ -1,0 +1,163 @@
+
+
+.marked pre,
+.marked code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.marked pre {
+  padding: .5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
+}
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .marked a,
+  .marked a:visited {
+    text-decoration: underline;
+  }
+
+  .marked a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .marked abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .marked a[href^="#"]:after,
+  .marked a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  .marked pre,
+  .marked blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  .marked thead {
+    display: table-header-group;
+  }
+
+  .marked tr,
+  .marked img {
+    page-break-inside: avoid;
+  }
+
+  .marked img {
+    max-width: 100% !important;
+  }
+
+  .marked p,
+  .marked h2,
+  .marked h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .marked h2,
+  .marked h3 {
+    page-break-after: avoid;
+  }
+}
+
+.marked a,
+.marked a:visited {
+  color: var(--cl-teal-light-);
+}
+
+.marked a:hover,
+.marked a:focus,
+.marked a:active {
+  color: var(--cl-teal-);
+}
+
+.marked .retro-no-decoration {
+  text-decoration: none;
+}
+
+.marked p,
+.marked .retro-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+.marked h1,
+.marked .retro-h1,
+.marked h2,
+.marked .retro-h2,
+.marked h3,
+.marked .retro-h3,
+.marked h4,
+.marked .retro-h4 {
+  margin: 1.414rem 0 .5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+
+.marked h1,
+.marked .retro-h1 {
+  margin-top: 0;
+  font-size: 3.998rem;
+}
+
+.marked h2,
+.marked .retro-h2 {
+  font-size: 2.827rem;
+}
+
+.marked h3,
+.marked .retro-h3 {
+  font-size: 1.999rem;
+}
+
+.marked h4,
+.marked .retro-h4 {
+  font-size: 1.414rem;
+}
+
+.marked h5,
+.marked .retro-h5 {
+  font-size: 1.121rem;
+}
+
+.marked h6,
+.marked .retro-h6 {
+  font-size: .88rem;
+}
+
+.marked small,
+.marked .retro-small {
+  font-size: .707em;
+}
+
+/* https://github.com/mrmrs/fluidity */
+
+.marked img,
+.marked canvas,
+.marked iframe,
+.marked video,
+.marked svg,
+.marked select,
+.marked textarea {
+  max-width: 100%;
+}
+
+.marked pre {
+  background-color: var(--bg-gray-);
+}
+
+.marked blockquote {
+  border-left: 3px solid var(--cl-teal-light-);
+  padding-left: 1rem;
+}

@@ -22,3 +22,19 @@ During the Cisco Networking Academy® course, administered by the undersigned in
 - Obtain and upgrade Cisco IOS® Software in Cisco devices
 
 Technological literacy is more important today than ever before, and Cisco is proud to provide you with the knowledge and skills necessary to build and maintain computers.
+
+
+Designing and Supporting Computer Networks, CCNA Discovery Learning Guide is the official supplemental textbook for the Designing and Supporting Computer Networks course in the Cisco® Networking Academy® CCNA® Discovery curriculum version 4. In this course, the last of four in the new curriculum, you progress through a variety of case studies and role-playing exercises, which include gathering requirements, designing basic networks, establishing proof-of-concept, and performing project management tasks. In addition, within the context of a pre-sales support position, you learn lifecycle services, including upgrades, competitive analyses, and system integration.
+
+The Learning Guide, written and edited by instructors, is designed as a portable desk reference to use anytime, anywhere to reinforce the material from the course and organize your time.
+
+The Learning Guide’s features help you focus on important concepts to succeed in this course:
+
+- Chapter Objectives–Review core concepts by answering the focus questions listed at the beginning of each chapter.
+- Key Terms–Refer to the lists of networking vocabulary introduced and highlighted in context in each chapter. The Glossary defines each key term.
+- Summary of Activities and Labs–Maximize your study time with this complete list of all associated exercises at the end of each chapter.
+- Check Your Understanding–Evaluate your readiness with the end-of-chapter questions that match the style of questions you see in the online course quizzes. 
+- Challenge Questions and Activities–Apply a deeper understanding of the concepts with these challenging end-of-chapter questions and activities. 
+- Hands-on Labs–Master the practical, hands-on skills of the course by performing all the tasks in the course labs included in Part II of the Learning Guide.
+- Portfolio Documents–Develop a professional network design portfolio as you work through real-life case studies. 
+

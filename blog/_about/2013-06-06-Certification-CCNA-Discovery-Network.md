@@ -21,3 +21,9 @@ During the Cisco Networking Academy® course, administered by the undersigned in
 - Implement WAN links
 
 Technological literacy is more important today than ever before, and Cisco is proud to provide you with the knowledge and skills necessary to build and maintain computers.
+
+Networking for Home and Small Businesses, CCNA Discovery Learning Guide is the official supplemental textbook for the Networking for Home and Small Businesses course in the Cisco® Networking Academy® CCNA® Discovery curriculum version 4. The course, the first of four in the new curriculum, teaches networking concepts by applying them to a type of network you may encounter in a home or small office.
+
+## Explore the world of networking 
+This version of the course includes a special tool called Packet Tracer 4.1®. Packet Tracer is a networking learning tool that supports a wide range of physical and logical simulations. It also provides visualization tools to help you to understand the internal workings of a network. The Packet Tracer activities included in the course consist of network simulations, games, activities, and challenges that provide a broad range of learning experiences.
+

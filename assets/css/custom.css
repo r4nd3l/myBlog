@@ -4,6 +4,8 @@
     --cl-teal-: #28a745;
     --cl-teal-light-: #62b16b;
     --cl-teal-lighter-: #62b16b81;
+    --bg-gray-: #f9fafb;
+    --br-gray-: #e5e7eb;
 }
 
 /* Custom Highlight settings */
@@ -18,7 +20,19 @@ html{
     font-family: 'Roboto';
 }
 
-div.highlight {
+
+pre.highlight{
+    background-color: var(--bg-gray-);
+    padding: 1rem !important;
+    border: 1px solid var(--br-gray-);
+    -moz-box-shadow: unset !important;
+    -webkit-box-shadow: unset !important;
+    box-shadow: unset !important;
+    margin: unset !important;
+    overflow: auto;
+}
+
+div.highlight{
     background-color: unset !important;
     padding: unset !important;
     border: unset !important;
