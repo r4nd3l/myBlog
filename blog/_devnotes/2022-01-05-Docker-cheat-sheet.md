@@ -1,5 +1,9 @@
-## Docker commands cheat sheet
-
+---
+layout: post
+title: Docker commands cheat sheet
+description: "Practical guide to use Docker"
+tags: [ Docker , Web ]
+---
 
 ## Information
 
