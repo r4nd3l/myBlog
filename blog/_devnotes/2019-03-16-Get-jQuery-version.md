@@ -5,9 +5,12 @@ description: "Console out the version of the current jQuery from browsers"
 tags: [JavaScript, Web, Development]
 ---
 
->if (typeof jQuery != 'undefined') {  
+
+Copy and paste into the DevTools > console tab and hit enter
+
+```
+if (typeof jQuery != 'undefined') {  
     // jQuery is loaded => print the version
     alert(jQuery.fn.jquery);
 }
----
-
+```

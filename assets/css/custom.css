@@ -28,7 +28,7 @@ pre.highlight{
     -moz-box-shadow: unset !important;
     -webkit-box-shadow: unset !important;
     box-shadow: unset !important;
-    margin: unset !important;
+    margin: 0 0 2rem 0;
     overflow: auto;
 }
 

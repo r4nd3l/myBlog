@@ -1,0 +1,8 @@
+I"=<p>Copy and paste into the DevTools &gt; console tab and hit enter</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (typeof jQuery != 'undefined') {  
+    // jQuery is loaded =&gt; print the version
+    alert(jQuery.fn.jquery);
+}
+</code></pre></div></div>
+:ET
