@@ -124,3 +124,11 @@ div.highlight{
     height: 100%;
     border: 0;
   }
+
+/* PDF custom settings */
+.pdf-reader{
+    margin: 1rem auto;
+}
+.pdf-reader > object{
+    height: 120vh;
+}
