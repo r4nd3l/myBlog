@@ -14,3 +14,7 @@ for (var i = 0; i < btns.length; i++) {
 
 // Current year
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+// Scroll to Top
+const goToTop = () => window.scrollTo(0, 0);
+goToTop();

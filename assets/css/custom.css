@@ -18,6 +18,7 @@
 
 html{
     font-family: 'Roboto';
+    scroll-behavior: smooth;
 }
 
 
@@ -131,4 +132,11 @@ div.highlight{
 }
 .pdf-reader > object{
     height: 120vh;
+}
+
+/* Scroll to Top custom settings */
+.scrollTop{
+    position: fixed;
+    right: 1rem;
+    bottom: 4rem;
 }
