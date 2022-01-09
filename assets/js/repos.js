@@ -12,7 +12,7 @@ for (let i=1; i < pages; i++) {
           <a href="${item.html_url}" target="_blank">
             <div class="p-4">
               <div class="grid lg:flex md:justify-between">
-                <h2 class="text-2xl font-medium">${item.name}</h2>
+                <h2 class="text-2xl font-medium truncate" title="${item.name}">${item.name}</h2>
                 <small class="text-gray-400 flex items-baseline"><i class="far fa-calendar-check mr-1 text-teal"></i><p class="repo-date">${item.created_at}</p></small>
               </div>
               <div class="grid xl:flex justify-between">

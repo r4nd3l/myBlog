@@ -1,8 +1,0 @@
-I"�<blockquote>
-  <p>if (typeof jQuery != ‘undefined’) {<br />
-    // jQuery is loaded =&gt; print the version
-    alert(jQuery.fn.jquery);
-}
-—</p>
-</blockquote>
-:ET
