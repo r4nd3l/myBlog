@@ -24,3 +24,9 @@ function WordCount(str) {
   return str.split(" ").length;
 }
 console.log(WordCount("hello world world"));
+
+// Search and count with a specific word in a string
+function count(str, find) {
+  return (str.split(find)).length - 1;
+}
+count("Gooooood", "o"); // 2
