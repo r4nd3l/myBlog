@@ -29,5 +29,5 @@ for (let i=1; i < pages; i++) {
   }).catch(error => console.error(error));
 }
 
-// For later use - images in grid view 
+// For later use - images in grid view
 // https://raw.githubusercontent.com/r4nd3l/BouncingBallPreLoader/master/img/BouncingBallPreLoader.png
