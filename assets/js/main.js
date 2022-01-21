@@ -19,12 +19,11 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 const goToTop = () => window.scrollTo(0, 0);
 goToTop();
 
-// Search and count with a specific word in a string
-let gitRepos = document.querySelector('#repos').innerHTML;
-let keyWord = "Mainly";
+// Search and count and print out the number of gitHub repos
+let gitHubRepos = document.querySelector('#repos').innerHTML;
+let keyWords = "Mainly";
 function count(str, find) {
     let allRepo = (str.split(find)).length - 1;
-    return allRepo;
+    document.querySelector('#repoNumber').innerHTML = allRepo;
 }
-count(gitRepos, keyWord);
-allRepo = document.querySelector('#repoNumber').innerHTML;
+count(gitHubRepos, keyWords);
