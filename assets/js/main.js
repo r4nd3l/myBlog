@@ -18,12 +18,3 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 // Scroll to Top
 const goToTop = () => window.scrollTo(0, 0);
 goToTop();
-
-// Search and count and print out the number of gitHub repos
-let gitHubRepos = document.querySelector('#repos').innerHTML;
-let keyWords = "Mainly";
-function count(str, find) {
-    let allRepo = (str.split(find)).length - 1;
-    document.querySelector('#repoNumber').innerHTML = allRepo;
-}
-count(gitHubRepos, keyWords);
