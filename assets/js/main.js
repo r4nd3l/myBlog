@@ -19,14 +19,12 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
 const goToTop = () => window.scrollTo(0, 0);
 goToTop();
 
-// Search and count by string
-function WordCount(str) {
-  return str.split(" ").length;
-}
-console.log(WordCount("hello world world"));
-
 // Search and count with a specific word in a string
+let gitRepos = document.querySelector('#repos').innerHTML;
+let keyWord = "Mainly";
 function count(str, find) {
-  return (str.split(find)).length - 1;
+    let allRepo = (str.split(find)).length - 1;
+    return allRepo;
 }
-count("Gooooood", "o"); // 2
+count(gitRepos, keyWord);
+document.querySelector('#repoNumber').innerHTML = allRepo;
