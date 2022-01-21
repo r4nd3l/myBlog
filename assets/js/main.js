@@ -27,4 +27,4 @@ function count(str, find) {
     return allRepo;
 }
 count(gitRepos, keyWord);
-document.querySelector('#repoNumber').innerHTML = allRepo;
+allRepo = document.querySelector('#repoNumber').innerHTML;
