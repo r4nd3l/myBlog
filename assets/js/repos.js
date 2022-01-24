@@ -26,17 +26,18 @@ for (let i=1; i < pages; i++) {
         </div>
       `
     })
-  }).catch(error => console.error(error));
+  }).catch(error => console.error(error))
+  .finally(function () {
+    // Search and count and print out the number of gitHub repos
+    let gitHubRepos = document.querySelector('#repos').innerHTML;
+    let keyWords = "Mainly";
+    function count(str, find) {
+        let allRepo = (str.split(find)).length - 1;
+        document.querySelector('#repoNumber').innerHTML = allRepo;
+    }
+    count(gitHubRepos, keyWords);
+  });
 }
-
-// Search and count and print out the number of gitHub repos
-let gitHubRepos = document.querySelector('#repos').innerHTML;
-let keyWords = "Mainly";
-function count(str, find) {
-    let allRepo = (str.split(find)).length - 1;
-    document.querySelector('#repoNumber').innerHTML = allRepo;
-}
-count(gitHubRepos, keyWords);
 
 // For later use - images in grid view
 // https://raw.githubusercontent.com/r4nd3l/BouncingBallPreLoader/master/img/BouncingBallPreLoader.png
