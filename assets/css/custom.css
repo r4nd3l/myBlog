@@ -129,11 +129,11 @@ div.highlight{
 /* PDF custom settings */
 .pdf-reader,
 .cp_embed_wrapper{
-    margin: 1rem auto;
+    margin: 1rem auto !important;
 }
 .pdf-reader > object{
     height: 120vh;
 }
 .cp_embed_wrapper > iframe{
-    height: 80vh;
+    height: 80vh !important;
 }
