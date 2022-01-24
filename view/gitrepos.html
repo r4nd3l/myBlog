@@ -15,14 +15,3 @@ description: Below you can find all my official GitHub repository
 </section>
 
 <section id="repos" class="col-span-12"></section>
-
-<script type="text/javascript">
-  // Search and count and print out the number of gitHub repos
-  let gitHubRepos = document.querySelector('#repos').innerHTML;
-  let keyWords = "Mainly";
-  function count(str, find) {
-      let allRepo = (str.split(find)).length - 1;
-      document.querySelector('#repoNumber').innerHTML = allRepo;
-  }
-  count(gitHubRepos, keyWords);
-</script>
