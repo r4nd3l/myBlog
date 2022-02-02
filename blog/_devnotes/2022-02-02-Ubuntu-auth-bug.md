@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Auth req pop stuck"
-description: "Authentication Required window stuck after login"
+title: "Linux Auth req pop stuck"
+description: "Ubuntu - Authentication Required window stuck after login"
 tags: [Ubuntu, Linux, Command]
 ---
 
