@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Match from an array as a reference no2"
+title: "Match from an array as a reference in vue"
 description: "Find and match values from an array as a reference and set into a new one"
-tags: [JavaScript, Web, Development]
+tags: [JavaScript, Web, Development, Vue]
 ---
 
 template
