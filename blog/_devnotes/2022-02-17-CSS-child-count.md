@@ -12,8 +12,8 @@ The key part is the following
 ```
     li:first-child:nth-last-child(2),
     li:first-child:nth-last-child(2) ~ li {
-    width: 50%;
-    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+        width: 50%;
+        background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
     }
 ```
 
