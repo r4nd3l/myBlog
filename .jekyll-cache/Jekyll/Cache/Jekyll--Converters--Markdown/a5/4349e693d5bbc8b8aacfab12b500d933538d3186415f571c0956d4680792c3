@@ -1,0 +1,5 @@
+I"é<p>The following code command will fix the issue</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git config --global tag.forcesignannotated false
+</code></pre></div></div>
+:ET

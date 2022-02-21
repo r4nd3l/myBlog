@@ -1,0 +1,36 @@
+I"<p>Parent template - component</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;wCar
+  v-for="(car, index) in filterCars"
+  :index="index"
+  :key="car.id"
+  :car="car"
+  :wicon="wSVG"
+/&gt;
+</code></pre></div></div>
+
+<p>Parent script</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  methods: {
+    async hideCars(car) {
+        this.wSVG = car.icon_path;
+    }
+  },
+</code></pre></div></div>
+
+<p>Child template - component</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;h3&gt;{ wicon }&lt;/h3&gt;
+</code></pre></div></div>
+
+<p>Child script</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  props: {
+    car: [Object, String],
+    wicon: String,
+    index: Number
+  },
+</code></pre></div></div>
+
+<p>Source link: <a href="https://vuejs.org/guide/components/props.html#prop-passing-details">source-link</a></p>
+:ET
