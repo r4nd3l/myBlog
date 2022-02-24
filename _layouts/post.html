@@ -20,12 +20,12 @@ layout: default
     <div class="col-span-12">
       <div class="flex justify-between">
         {% if page.previous.url %}
-          <a class="linkPag border border-gray-100 border-solid hover:bg-gray-100 prev px-2 py-1 rounded" href="{{page.previous.url}}">
+          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.previous.url}}">
             <i class="fas fa-chevron-left mr-2"></i><span class="hidden xl:inline-flex">{{page.previous.title}}</span>
           </a>
         {% endif %}
         {% if page.next.url %}
-          <a class="linkPag border border-gray-200 border-solid hover:bg-gray-100 prev px-2 py-1 rounded" href="{{page.next.url}}">
+          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.next.url}}">
             <span class="hidden xl:inline-flex">{{page.next.title}}</span><i class="fas fa-chevron-right ml-2"></i>
           </a>
         {% endif %}

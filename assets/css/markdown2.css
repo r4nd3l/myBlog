@@ -89,7 +89,7 @@
 .marked p,
 .marked .retro-p {
   font-size: 1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.75rem;
 }
 
 .marked h1,
@@ -141,8 +141,6 @@
   font-size: .707em;
 }
 
-/* https://github.com/mrmrs/fluidity */
-
 .marked img,
 .marked canvas,
 .marked iframe,
@@ -155,9 +153,19 @@
 
 .marked pre {
   background-color: var(--bg-gray-);
+  border-radius: .25rem;
 }
 
 .marked blockquote {
   border-left: 3px solid var(--cl-teal-light-);
   padding-left: 1rem;
+}
+
+.marked ul{
+  padding: 1rem 2rem;
+  list-style: disc;
+}
+
+.marked ul li{
+  padding: .2rem 0;
 }
