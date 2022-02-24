@@ -137,3 +137,8 @@ div.highlight{
 .cp_embed_wrapper > iframe{
     height: 80vh !important;
 }
+
+/* Custom pagination buttons settings */
+a.linkPag:hover > i{
+    color: #2aa745;
+}
