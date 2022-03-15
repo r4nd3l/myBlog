@@ -9,7 +9,7 @@ When working with JavaScript, you'll work with data structures all the time. Tha
 
 ***
 
-Arrays
+> Arrays
 
 ```
     const names = ['Max', 'Manu', 'Julie', 'Max'];
@@ -31,7 +31,7 @@ Arrays
 
 ***
 
-Sets
+> Sets
 
 ```
     const ids = new Set();
@@ -54,7 +54,7 @@ Sets
 
 ***
 
-Maps
+> Maps
 
 ```
     const resultData = new Map();
@@ -82,7 +82,7 @@ Maps
 
 ***
 
-Objects
+> Objects
 
 ```
     const person = {
@@ -104,7 +104,7 @@ Objects
 
 ***
 
-Linked lists
+> Linked lists
 
 ```
     class LinkedList{
