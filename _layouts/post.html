@@ -4,6 +4,18 @@ layout: default
 
 <article class="lg:container mx-auto mb-32 sm:mb-20">
   <div class="grid grid-cols-12 gap-4 mx-4 sm:mx-16 text-gray-500">
+
+    <div class="col-span-12">
+      <div class="flex justify-between">
+          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.previous.url}}">
+            <i class="fas fa-chevron-left mr-2"></i><span class="hidden xl:inline-flex">Previous page</span>
+          </a>
+          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.url | relative_url}}">
+            <span class="hidden xl:inline-flex">Back to main</span><i class="fas fa-chevron-up ml-2"></i>
+          </a>
+      </div>
+    </div>
+
     <div class="col-span-12 my-10">
       <h2 class="text-2xl font-medium">{{ page.title }}</h2>
       <div class="grid xl:flex justify-between">
@@ -15,8 +27,8 @@ layout: default
         </span>
       </div>
       <div class="marked text-justify mt-8">{{ content }}</div>
-
     </div>
+
     <div class="col-span-12">
       <div class="flex justify-between">
         {% if page.previous.url %}
@@ -31,5 +43,6 @@ layout: default
         {% endif %}
       </div>
     </div>
+
   </div>
 </article>
