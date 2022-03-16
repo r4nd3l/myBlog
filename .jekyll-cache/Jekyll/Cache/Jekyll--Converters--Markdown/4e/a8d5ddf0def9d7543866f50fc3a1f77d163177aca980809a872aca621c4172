@@ -1,0 +1,30 @@
+I"�<p>Collect all the links from a page which has a “title” attribute and display them on a new tab page in the browser</p>
+
+<p>Copy paste the code below into the console under the devtools in the browser</p>
+
+<hr />
+
+<blockquote>
+  <p>JavaScript</p>
+</blockquote>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    var x = document.querySelectorAll('a[href*="/view/"][title]');
+    var myarray = []
+    for (var i=0; i&lt;x.length; i++){
+    var nametext = x[i].textContent;
+    var cleantext = nametext.replace(/\s+/g, ' ').trim();
+    var cleanlink = x[i].href;
+    myarray.push([cleantext,cleanlink]);
+    };
+    function make_table() {
+        var table = '&lt;table&gt;&lt;thead&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Links&lt;/th&gt;&lt;/thead&gt;&lt;tbody&gt;';
+    for (var i=0; i&lt;myarray.length; i++) {
+                table += '&lt;tr&gt;&lt;td&gt;'+ myarray[i][0] + '&lt;/td&gt;&lt;td&gt;'+ '&lt;a href="' + myarray[i][1] + '" target="_blank"&gt;' + myarray[i][1] + '&lt;/a&gt;' + '&lt;/td&gt;&lt;/tr&gt;';
+        };
+    
+        var w = window.open("");
+    w.document.write(table); 
+    }
+    make_table()
+</code></pre></div></div>
+:ET
