@@ -5,18 +5,18 @@ layout: default
 <article class="lg:container mx-auto mb-32 sm:mb-20">
   <div class="grid grid-cols-12 gap-4 mx-4 sm:mx-16 text-gray-500">
 
-    <div class="col-span-12">
+    <div class="col-span-12 mt-4">
       <div class="flex justify-between">
-          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" onclick="window.history.back()">
+          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded cursor-pointer" onclick="window.history.back()">
             <i class="fas fa-chevron-left mr-2"></i><span class="hidden xl:inline-flex">Recent page</span>
           </a>
-          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.url}}">
+          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.path}}">
             <span class="hidden xl:inline-flex">Back to main</span><i class="fas fa-chevron-up ml-2"></i>
           </a>
       </div>
     </div>
 
-    <div class="col-span-12 my-10">
+    <div class="col-span-12">
       <h2 class="text-2xl font-medium">{{ page.title }}</h2>
       <div class="grid xl:flex justify-between">
         <small class="truncate-2-line md:truncate-1-line h-full pr-4 xl:pr-16"><i class="far fa-calendar-check mr-1 text-teal"></i>{{ page.date | date_to_long_string }}</small>
