@@ -2,19 +2,19 @@
 layout: default
 ---
 
+<div class="mt-4 mx-4 sticky top-20">
+  <div class="flex justify-between">
+      <a class="invisible lg:visible border border-gray-300 border-solid cursor-pointer hover:border-green-400 linkPag pr-4 px-3 py-1 rounded-full text-gray-500" onclick="window.history.back()"  title="Recent page">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+      <a class="invisible lg:visible border border-gray-300 border-solid cursor-pointer hover:border-green-400 linkPag px-3 py-1 rounded-full text-gray-500" href="{{site.url}}"  title="Back to main">
+        <i class="fas fa-chevron-up"></i>
+      </a>
+  </div>
+</div>
+
 <article class="lg:container mx-auto mb-32 sm:mb-20">
   <div class="grid grid-cols-12 gap-4 mx-4 sm:mx-16 text-gray-500">
-
-    <div class="col-span-12 mt-4">
-      <div class="flex justify-between">
-          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded cursor-pointer" onclick="window.history.back()">
-            <i class="fas fa-chevron-left mr-2"></i><span class="hidden xl:inline-flex">Recent page</span>
-          </a>
-          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{site.url}}">
-            <span class="hidden xl:inline-flex">Back to main</span><i class="fas fa-chevron-up ml-2"></i>
-          </a>
-      </div>
-    </div>
 
     <div class="col-span-12">
       <h2 class="text-2xl font-medium">{{ page.title }}</h2>
