@@ -7,10 +7,10 @@ layout: default
 
     <div class="col-span-12">
       <div class="flex justify-between">
-          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.previous.url}}">
-            <i class="fas fa-chevron-left mr-2"></i><span class="hidden xl:inline-flex">Previous page</span>
+          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" onclick="window.history.back()">
+            <i class="fas fa-chevron-left mr-2"></i><span class="hidden xl:inline-flex">Recent page</span>
           </a>
-          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.url | relative_url}}">
+          <a class="linkPag border border-gray-300 border-solid hover:border-green-400 prev px-2 py-1 rounded" href="{{page.url}}">
             <span class="hidden xl:inline-flex">Back to main</span><i class="fas fa-chevron-up ml-2"></i>
           </a>
       </div>
