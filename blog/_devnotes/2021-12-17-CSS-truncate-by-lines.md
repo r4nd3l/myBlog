@@ -8,6 +8,8 @@ tags: [ CSS , truncate , text ]
 # CSS truncate by lines
 
 Truncate 2 lined
+
+{% include codeHeader.html %}
 ```
     overflow: hidden;
     -webkit-line-clamp: 2;
@@ -17,6 +19,8 @@ Truncate 2 lined
 ```
 
 Truncate 3 lined
+
+{% include codeHeader.html %}
 ```
     overflow: hidden;
     -webkit-line-clamp: 3;
@@ -26,6 +30,8 @@ Truncate 3 lined
 ```
 
 Truncate 4 lined
+
+{% include codeHeader.html %}
 ```
     overflow: hidden;
     -webkit-line-clamp: 4;

@@ -8,6 +8,8 @@ tags: [ JS , Web ]
 ## Code snippets
 
 HTML
+
+{% include codeHeader.html %}
 ```
 <div class="section">
   <div><h1>Scroll</h1></div>
@@ -113,6 +115,8 @@ HTML
 ```
 
 CSS
+
+{% include codeHeader.html %}
 ```
 h1{
   color: gray;
@@ -135,6 +139,8 @@ h1{
 ```
 
 JS
+
+{% include codeHeader.html %}
 ```
 let myScroll = document.querySelector(".section");
 myScroll.addEventListener("wheel", (e) => {

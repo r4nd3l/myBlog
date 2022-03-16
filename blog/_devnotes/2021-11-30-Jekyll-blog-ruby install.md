@@ -6,6 +6,8 @@ tags: [ Jekyll , linux , environment, install ]
 ---
 
 Then reinstall ruby using rbenv and ruby-build according to their docs:
+
+{% include codeHeader.html %}
 ```
 cd $HOME
 sudo apt-get update
@@ -19,6 +21,7 @@ sudo apt-get install git-core zlib1g-dev build-essential libssl-dev libreadline-
 
 Now we will install rbenv (recommended, see docs)
 
+{% include codeHeader.html %}
 ```
 cd
 git clone https://github.com/rbenv/rbenv.git ~/.rbenv
@@ -36,6 +39,7 @@ ruby -v
 ```
 The last step is to install Bundler:
 
+{% include codeHeader.html %}
 ```
 gem install bundler
 rbenv rehash

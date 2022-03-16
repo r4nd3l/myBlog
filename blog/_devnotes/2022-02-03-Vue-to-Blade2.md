@@ -7,6 +7,7 @@ tags: [JavaScript, Web, Development, Vue]
 
 In Vue component
 
+{% include codeHeader.html %}
 ```
 <template>
     <h4>{{ car.title }}</h4>
@@ -36,6 +37,7 @@ In Vue component
 
 In (Laravel) Blade
 
+{% include codeHeader.html %}
 ```
 <span id="vueToBlade">Demo car</span>
 ```

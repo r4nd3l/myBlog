@@ -10,6 +10,7 @@ Since HTML5 it’s been valid to start an HTML element ID with a number. For exa
 
 However that doesn’t mean that CSS is happy to have an ID selector starting with a number. For example, this will not work:
 
+{% include codeHeader.html %}
 ```
   #10 { color: red; }
 ```
@@ -19,12 +20,15 @@ That’s because even though HTML5 is quite happy for an ID to start with a numb
 >In CSS, identifiers (including element names, classes, and IDs in selectors) can contain only the characters [a-zA-Z0-9] and ISO 10646 characters U+00A0 and higher, plus the hyphen (-) and the underscore (_); they cannot start with a digit, two hyphens, or a hyphen followed by a digit. Identifiers can also contain escaped characters and any ISO 10646 character as a numeric code (see next item). For instance, the identifier “B&W?” may be written as “B\&W\?” or “B\26 W\3F”. - W3C Specification
 
 However, you can easily work around this by using an attribute selector:
+
+{% include codeHeader.html %}
 ```
   [id="10"] {color: red;}
 ```
 
 However, another possibility is to use a unicode character instead of a number. For example, instead of the attribute selector, you could do this:
 
+{% include codeHeader.html %}
 ```
   #\31 0 {color: red;}
 ```
@@ -35,16 +39,19 @@ However, that seems more difficult to me than the attribute selector, I’d alwa
 
 The same number and selector rules apply with class names. You can write a class starting with a number in HTML but to get the selector to work in CSS you either need to use the attribute selector or escape it with unicode. To exemplify the prior example with a class instead:
 
+{% include codeHeader.html %}
 ```
   <div class="10">hello</div>
 ```
 You could either do this:
 
+{% include codeHeader.html %}
 ```
   [class="10"] {color: red;}
 ```
 Or this:
 
+{% include codeHeader.html %}
 ```
   .\31 0 {color: red;}
 ```

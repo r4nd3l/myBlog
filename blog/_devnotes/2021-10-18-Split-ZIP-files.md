@@ -5,6 +5,7 @@ description: "How to split ZIP archive into multiple blocks of a specific size"
 tags: [ ZIP , shell , script ]
 ---
 
+{% include codeHeader.html %}
 ```
 $ zip -r -s 5m myFiles.zip exampleFolder/
 ``` 

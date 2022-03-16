@@ -7,6 +7,7 @@ tags: [ Web, Development, JavaScript, jQuery]
 
 HTML:
 
+{% include codeHeader.html %}
 ```
 <!-- Checkbox placed -->
 <input class="form-check-input" type="checkbox" id="maker_check" value="1"onchange="valueChanged()">
@@ -20,6 +21,7 @@ HTML:
 
 JS:
 
+{% include codeHeader.html %}
 ```
 function valueChanged()
 {
@@ -31,6 +33,8 @@ function valueChanged()
 ```
 
 jQuery:
+
+{% include codeHeader.html %}
 ```
 // jQuery is needed 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>

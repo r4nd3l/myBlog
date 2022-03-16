@@ -22,12 +22,15 @@ Or use a defined port:
 
 ##### If you do not already have a GUI on your Raspbian, or you use SSH to connect to your Raspberry, you can use the following command:
 
+{% include codeHeader.html %}
 ```
   wget -O check_apache.html http://127.0.0.1 
 ```
 
 This command will save the HTML code of the page in the file “check_apache.html” in the current directory.
 So you only have to read the file with the command:
+
+{% include codeHeader.html %}
 ```
   cat ./check_apache.html
 ```

@@ -1,0 +1,11 @@
+I" <h4 id="php-send-mail-setup">PHP send mail() setup</h4>
+<hr />
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $ sudo apt-get install postfix
+    $ sudo apt install -y mailutils
+   ($ sudo dpkg-reconfigure postfix)
+</code></pre></div></div>
+:ET

@@ -1,0 +1,39 @@
+I"7<p>In Vue component</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;template&gt;
+    &lt;h4&gt;&lt;/h4&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    export default {
+        data() {
+            return {
+                dataPass: "",
+            }
+        },
+        watch: {
+            dataPass(item){
+                document.querySelector("#vueToBlade").innerText = item;
+            }
+        },
+        async mounted(){
+            this.dataPass = this.car.title;
+        },
+        props: {
+            car: Object,
+        },
+    }
+&lt;/script&gt;
+</code></pre></div></div>
+
+<p>In (Laravel) Blade</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;span id="vueToBlade"&gt;Demo car&lt;/span&gt;
+</code></pre></div></div>
+:ET

@@ -7,6 +7,7 @@ tags: [ CSS , JavaScript , event ]
 
 ## Add event listener to multiple buttons with the same class
 
+{% include codeHeader.html %}
 ```
     btns = document.getElementsByClassName("saveBtn");
     for (var i = 0; i < btns.length; i++) {

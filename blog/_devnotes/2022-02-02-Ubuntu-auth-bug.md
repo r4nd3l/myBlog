@@ -13,6 +13,7 @@ The easier way is to just restart GNOME by one of two ways:
 - pressing `Alt` + `F2`, type `r` then `Enter`, or
 - in terminal:
 
+{% include codeHeader.html %}
 ```
 $ killall -3 gnome-shell
 ```

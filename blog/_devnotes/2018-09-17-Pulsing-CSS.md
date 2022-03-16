@@ -7,12 +7,14 @@ tags: [ Web, Development, CSS]
 
 HTML:
 
+{% include codeHeader.html %}
 ```
 <div class="pulse"></div>
 ```
 
 CSS:
 
+{% include codeHeader.html %}
 ```
 .pulse {
   box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);

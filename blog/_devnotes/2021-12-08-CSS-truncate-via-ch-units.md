@@ -7,6 +7,7 @@ tags: [ CSS , truncate , text ]
 
 CSS
 
+{% include codeHeader.html %}
 ```
 .myClass {
   font-family: monospace;
@@ -18,6 +19,7 @@ CSS
 
 HTML
 
+{% include codeHeader.html %}
 ```
 <p class="myClass">
   My String

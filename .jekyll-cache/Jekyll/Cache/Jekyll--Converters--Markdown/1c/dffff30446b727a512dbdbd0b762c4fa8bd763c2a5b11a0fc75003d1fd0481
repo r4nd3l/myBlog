@@ -1,0 +1,30 @@
+I"™<p>jQuery:</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $(window).scroll(function() {
+    var heightTop = $('#fab').offset().top,
+    outHeight = $('#fab').outerHeight(),
+    wHeight = $(window).height(),
+    wScroll = $(this).scrollTop();
+    if (wScroll &gt; (heightTop+outHeight-wHeight) &amp;&amp; (heightTop &gt; wScroll) &amp;&amp; (wScroll+wHeight &gt; heightTop+outHeight)){
+        $('.telegram_button').fadeOut("slow");
+    } else {
+        $('.telegram_button').fadeIn("slow");
+    }
+    });
+</code></pre></div></div>
+
+<p>HTML:</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    &lt;!-- Floating Action Button - FAB - Telegram  --&gt;
+    &lt;div id="fab"&gt;
+    &lt;img class="telegram_button" src="{{ URL::to('img/telegram_logo.svg') }}" data-toggle="popover" data-placement="left" title="Need help?" data-content="&lt;a href='https://t.me/envienta' title='telegram link'&gt;&lt;button class='btn btn-primary btn-sm'&gt;Join &lt;/button&gt;&lt;/a&gt; our Telegram channel!"  width="64" height="64" alt="Telegram"&gt;
+    &lt;/div&gt;
+</code></pre></div></div>
+:ET

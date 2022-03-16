@@ -7,6 +7,7 @@ tags: [ Ubuntu, Command, Terminal ]
 
 *apt upgrade* will tell you what it would like to do, including package upgrades; and this will include a list of packages it won’t upgrade:
 
+{% include codeHeader.html %}
 ```
 $ sudo apt upgrade -o APT::Get::Show-Upgraded=true
 The following packages were automatically installed and are no longer required:
@@ -28,18 +29,21 @@ Do you want to continue? [Y/n]
 
 If this still doesn’t show anything for you, perhaps the non-upgraded package is locally installed (but then, *apt* presumably wouldn’t want to upgrade it...). A good tool to investigate this is *apt-show-versions*:
 
+{% include codeHeader.html %}
 ```
 sudo apt install apt-show-versions
 ```
 
 Then run
 
+{% include codeHeader.html %}
 ```
 apt-show-versions | grep "No available version in archive"
 ```
 
 to see packages which aren’t available in the configured repositories, and
 
+{% include codeHeader.html %}
 ```
 apt-show-versions | grep upgradeable
 ```

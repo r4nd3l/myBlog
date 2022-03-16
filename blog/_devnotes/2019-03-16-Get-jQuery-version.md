@@ -8,6 +8,7 @@ tags: [JavaScript, Web, Development]
 
 Copy and paste into the DevTools > console tab and hit enter
 
+{% include codeHeader.html %}
 ```
 if (typeof jQuery != 'undefined') {  
     // jQuery is loaded => print the version

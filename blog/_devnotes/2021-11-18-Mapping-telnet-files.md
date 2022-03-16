@@ -7,6 +7,7 @@ tags: [ Linux , Shell , command, telnet ]
 
 ### Mapping telnet files 
 
+{% include codeHeader.html %}
 ```
     $ ls -a -l -e -R /
 

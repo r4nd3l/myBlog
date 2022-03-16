@@ -1,0 +1,19 @@
+I",<blockquote>
+  <p>$ sudo nano /etc/phpmyadmin/apache.conf</p>
+</blockquote>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Alias /phpmyadmin /usr/share/phpmyadmin
+&lt;Directory /usr/share/phpmyadmin&gt;
+    Options Indexes FollowSymLinks
+    DirectoryIndex index.php
+
+    Order deny,allow
+    Deny from all
+    Allow from 127.0.0.1
+&lt;/Directory&gt;
+</code></pre></div></div>
+<hr />
+:ET

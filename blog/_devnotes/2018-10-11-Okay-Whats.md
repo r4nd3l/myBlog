@@ -13,6 +13,7 @@ My plan is to reconfigure a regular framework step by step. Of course the exist 
 
 As I wrote above, every column is based on an exact percentage. Currently I use four media query. Small, medium, wide and large. The large gonna be the one where the magic will goes. I would like to extend the content from that size. I still don’t know which method is the best to do this, but I think the CSS itself is not enough here. JavaScript is more suitable, but I’ll see what I can do.
 
+{% include codeHeader.html %}
 ```
 /* Between 960px and 640px */
 @media screen and (min-width:640px){

@@ -7,6 +7,7 @@ tags: [JavaScript, Web, Development, Vue]
 
 Create a variable in the root component data object and change it from the child component so assuming `resources/js/components/ExampleComponent.vue` like this
 
+{% include codeHeader.html %}
 ```
 <template>
     <div class="container">
@@ -32,6 +33,7 @@ Create a variable in the root component data object and change it from the child
 
 and a `resources/js/app.js` like so
 
+{% include codeHeader.html %}
 ```
 window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
@@ -47,6 +49,7 @@ const app = new Vue({
 
 and a blade view like so `resources/views/welcome.blade.php`
 
+{% include codeHeader.html %}
 ```
 <div id="app">
     <example-component></example-component>

@@ -1,0 +1,58 @@
+I"µ<p>Create a variable in the root component data object and change it from the child component so assuming <code class="language-plaintext highlighter-rouge">resources/js/components/ExampleComponent.vue</code> like this</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;template&gt;
+    &lt;div class="container"&gt;
+        &lt;input v-model="field" type="text"&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+    export default {
+        data() {
+            return {
+                field: ''
+            }
+        },
+        watch: {
+            field: function (val) {
+                this.$root.bladeValue = val;
+            }
+        }
+    }
+&lt;/script&gt;
+</code></pre></div></div>
+
+<p>and a <code class="language-plaintext highlighter-rouge">resources/js/app.js</code> like so</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>window.Vue = require('vue');
+Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+const app = new Vue({
+    el: '#app',
+    data() {
+        return {
+            bladeValue: ''
+        }
+    }
+});
+</code></pre></div></div>
+
+<p>and a blade view like so <code class="language-plaintext highlighter-rouge">resources/views/welcome.blade.php</code></p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div id="app"&gt;
+    &lt;example-component&gt;&lt;/example-component&gt;
+    &lt;h1&gt;@&lt;/h1&gt;
+&lt;/div&gt;
+&lt;script src="/js/app.js"&gt;&lt;/script&gt;
+</code></pre></div></div>
+
+<p>Then <code class="language-plaintext highlighter-rouge">bladeValue</code> will be binded to <code class="language-plaintext highlighter-rouge">field</code> in <code class="language-plaintext highlighter-rouge">ExampleComponent</code></p>
+:ET

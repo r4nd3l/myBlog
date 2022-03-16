@@ -8,6 +8,7 @@ tags: [ Linux , command , shell, PHP ]
 #### PHP send mail() setup
 ---
 
+{% include codeHeader.html %}
 ```
     $ sudo apt-get install postfix
     $ sudo apt install -y mailutils

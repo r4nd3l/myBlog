@@ -13,7 +13,8 @@ tags: [ CSS , selector ]
 So you learned the base `id`, `class`, and `descendant` selectors—and then called it a day? If so, you're missing out on an enormous level of flexibility. While many of the selectors mentioned in this article are part of the CSS3 spec, and are, consequently, only available in modern browsers, you owe it to yourself to commit these to memory.
 
 ##  1. *
-    
+
+{% include codeHeader.html %}
 ```
     * {
      margin: 0;
@@ -26,7 +27,8 @@ Let's knock the obvious ones out, for the beginners, before we move onto the mor
 The star symbol will target every single element on the page. Many developers will use this trick to zero out the `margin`s and `padding`. While this is certainly fine for quick tests, I'd advise you to never use this in production code. It adds too much _weight_ on the browser, and is unnecessary.
 
 The `*` can also be used with child selectors. 
-    
+
+{% include codeHeader.html %}
 ```
     #container * {
      border: 1px solid black;
@@ -48,7 +50,8 @@ This will target every single element that is a child of the `#container` `div`.
 ---
 
 ##  2. #X
-    
+
+{% include codeHeader.html %}
 ```
     #container {
        width: 960px;
@@ -75,7 +78,8 @@ Prefixing the hash symbol to a selector allows us to target by `id`. This is eas
 ---
 
 ##  3. .X
-    
+
+{% include codeHeader.html %}
 ```
     .error {
       color: red;
@@ -95,7 +99,8 @@ This is a `class` selector. The difference between `id`s and `class`es is that, 
 * Opera 
 
 ##  4. X Y
-    
+
+{% include codeHeader.html %}
 ```
     li a {
       text-decoration: none;
@@ -119,7 +124,8 @@ The next most comment selector is the `descendant` selector. When you need to be
 ---
 
 ##  5. X
-    
+
+{% include codeHeader.html %}
 ```
     a { color: red; }
     ul { margin-left: 0; }
@@ -140,7 +146,8 @@ What if you want to target all elements on a page, according to their `type`, ra
 ---
 
 ##  6. X:visited and X:link
-    
+
+{% include codeHeader.html %}
 ```
     a:link { color: red; }
     a:visited { color: purple; }
@@ -163,7 +170,8 @@ Alternatively, we also have the `:visited` pseudo class, which, as you'd expecte
 ---
 
 ##  7. X + Y
-    
+
+{% include codeHeader.html %}
 ```    
     ul + p {
        color: red;
@@ -185,7 +193,8 @@ This is referred to as an adjacent selector. It will select _only_ the element t
 ---
 
 ##  8. X > Y
-    
+
+{% include codeHeader.html %}
 ```    
     div#container > ul {
       border: 1px solid black;
@@ -193,7 +202,8 @@ This is referred to as an adjacent selector. It will select _only_ the element t
 ```
 
 The difference between the standard `X Y` and `X > Y` is that the latter will only select direct children. For example, consider the following markup.
-    
+
+{% include codeHeader.html %}
 ```
     <div id="container">
        <ul>
@@ -226,7 +236,8 @@ For this reason, there are performance benefits in using the child combinator. I
 ---
 
 ##  9. X ~ Y
-    
+
+{% include codeHeader.html %}
 ```
     ul ~ p {
        color: red;
@@ -248,7 +259,8 @@ This sibling combinator is similar to `X + Y`, however, it's less strict. While 
 ---
 
 ##  10. X[title]
-    
+
+{% include codeHeader.html %}
 ```
     a[title] {
        color: green;
@@ -270,7 +282,8 @@ Referred to as an _attributes selector_, in our example above, this will only se
 ---
 
 ##  11. X[href="foo"]
-    
+
+{% include codeHeader.html %}
 ```
     a[href="http://net.tutsplus.com"] {
       color: #1f6053; /* nettuts green */
@@ -296,7 +309,8 @@ This works well, though, it's a bit rigid. What if the link does indeed direct t
 ---
 
 ##  12. X[href*="nettuts"]
-    
+
+{% include codeHeader.html %}
 ```
     a[href*="tuts"] {
       color: #1f6053; /* nettuts green */
@@ -320,7 +334,8 @@ Keep in mind that this is a broad statement. What if the anchor tag linked to so
 ---
 
 ##  13. X[href^="http"]
-    
+
+{% include codeHeader.html %}
 ```
     a[href^="http"] {
        background: url(path/to/external/icon.png) no-repeat;
@@ -349,7 +364,8 @@ Now, what if we wanted to instead style all anchors which link to, say, a photo?
 ---
 
 ##  14. X[href$=".jpg"]
-    
+
+{% include codeHeader.html %}
 ```
     a[href$=".jpg"] {
        color: red;
@@ -371,7 +387,8 @@ Again, we use a regular expressions symbol, `$`, to refer to the end of a string
 ---
 
 ##  15. X[data-*="foo"]
-    
+
+{% include codeHeader.html %}
 ```
     a[data-filetype="image"] {
        color: red;
@@ -379,7 +396,8 @@ Again, we use a regular expressions symbol, `$`, to refer to the end of a string
 ```
 
 Refer back to number eight; how do we compensate for all of the various image types: `png`, `jpeg`, `jpg`, `gif` ? Well, we could create multiple selectors, such as:
-    
+
+{% include codeHeader.html %}    
 ```
     a[href$=".jpg"],
     a[href$=".jpeg"],
@@ -390,13 +408,15 @@ Refer back to number eight; how do we compensate for all of the various image ty
 ```
 
 But, that's a pain in the butt, and is inefficient. Another possible solution is to use custom attributes. What if we added our own `data-filetype` attribute to each anchor that links to an image?
-    
+
+{% include codeHeader.html %}
 ```
     <a href="path/to/image.jpg" data-filetype="image"> Image Link </a> 
 ```
 
 Then, with that _hook_ in place, we can use a standard attributes selector to target only those anchors. 
-    
+
+{% include codeHeader.html %}
 ```
     a[data-filetype="image"] {
        color: red;
@@ -416,7 +436,8 @@ Then, with that _hook_ in place, we can use a standard attributes selector to ta
 ---
 
 ##  16. X[foo~="bar"]
-    
+
+{% include codeHeader.html %}
 ```
      a[data-info~="external"] {
        color: red;
@@ -430,13 +451,15 @@ Then, with that _hook_ in place, we can use a standard attributes selector to ta
 Here's a special one that'll impress your friends. Not too many people know about this trick. The tilda (`~`) symbol allows us to target an attribute which has a spaced-separated list of values. 
 
 Going along with our custom attribute from number fifteen, above, we could create a `data-info` attribute, which can receive a space-separated list of anything we need to make note of. In this case, we'll make note of external links and links to images -- just for the example.
-    
+
+{% include codeHeader.html %}
 ```
     "<a href="path/to/image.jpg" data-info="external image"> Click Me, Fool </a>
 ```
 
 With that markup in place, now we can target any tags that have either of those values, by using the ~ attributes selector trick.
-    
+
+{% include codeHeader.html %}
 ```
     /* Target data-info attr that contains the value "external" */
     a[data-info~="external"] {
@@ -464,7 +487,8 @@ Pretty nifty, ay?
 ---
 
 ##  17. X:checked
-    
+
+{% include codeHeader.html %}
 ```
     input[type=radio]:checked {
        border: 1px solid black;
@@ -490,7 +514,8 @@ This pseudo class will only target a user interface element that has been _check
 The `before` and `after` pseudo classes kick butt. Every day, it seems, people are finding new and creative ways to use them effectively. They simply generate content around the selected element.
 
 Many were first introduced to these classes when they encountered the clear-fix hack.
-    
+
+{% include codeHeader.html %}
 ```
     .clearfix:after {
         content: "";
@@ -524,7 +549,8 @@ For another creative use of this, [refer to my quick tip on creating shadows][20
 ---
 
 ##  19. X:hover
-    
+
+{% include codeHeader.html %}
 ```
     div:hover {
       background: #e3e3e3;
@@ -536,7 +562,8 @@ Oh come on. You know this one. The official term for this is `user action pseudo
 > Keep in mind that older version of Internet Explorer don't respond when the `:hover` pseudo class is applied to anything other than an anchor tag. 
 
 You'll most often use this selector when applying, for example, a `border-bottom` to anchor tags, when hovered over.
-    
+
+{% include codeHeader.html %}
 ```
     a:hover {
      border-bottom: 1px solid black;
@@ -556,7 +583,8 @@ You'll most often use this selector when applying, for example, a `border-bottom
 ---
 
 ##  20. X:not(selector)
-    
+
+{% include codeHeader.html %}
 ```
     div:not(#container) {
        color: blue;
@@ -566,7 +594,8 @@ You'll most often use this selector when applying, for example, a `border-bottom
 The `negation` pseudo class is particularly helpful. Let's say I want to select all divs, except for the one which has an `id` of `container`. The snippet above will handle that task perfectly.
 
 Or, if I wanted to select every single element (not advised) except for paragraph tags, we could do:
-    
+
+{% include codeHeader.html %}
 ```
     *:not(p) {
       color: green;
@@ -586,7 +615,8 @@ Or, if I wanted to select every single element (not advised) except for paragrap
 ---
 
 ##  21. X::pseudoElement
-    
+
+{% include codeHeader.html %}
 ```
     p::first-line {
        font-weight: bold;
@@ -599,7 +629,8 @@ We can use pseudo elements (designated by `::`) to style fragments of an element
 > A pseudo-element is composed of two colons: `::`
 
 #### Target the First Letter of a Paragraph
-    
+
+{% include codeHeader.html %}
 ```
     p::first-letter {
        float: left;
@@ -615,7 +646,8 @@ This snippet is an abstraction that will find all paragraphs on the page, and th
 This is most often used to create newspaper-like styling for the first-letter of an article.
 
 #### Target the First Line of a Paragraph
-    
+
+{% include codeHeader.html %}
 ```
     p::first-line {
        font-weight: bold;
@@ -640,7 +672,8 @@ Similarly, the `::first-line` pseudo element will, as expected, style the first 
 ---
 
 ##  22. X:nth-child(n)
-    
+
+{% include codeHeader.html %}
 ```
     li:nth-child(3) {
        color: red;
@@ -665,7 +698,8 @@ We can even use this to select a variable set of children. For example, we could
 ---
 
 ##  23. X:nth-last-child(n)
-    
+
+{% include codeHeader.html %}
 ```
     li:nth-last-child(2) {
        color: red;
@@ -689,7 +723,8 @@ This technique works almost identically from number sixteen above, however, the 
 ---
 
 ##  24. X:nth-of-type(n)
-    
+
+{% include codeHeader.html %}
 ```
     ul:nth-of-type(3) {
        border: 1px solid black;
@@ -712,7 +747,8 @@ Imagine mark-up that contains five unordered lists. If you wanted to style only 
 ---
 
 ##  25. X:nth-last-of-type(n)
-    
+
+{% include codeHeader.html %}
 ```
     ul:nth-last-of-type(3) {
        border: 1px solid black;
@@ -732,7 +768,8 @@ And yes, to remain consistent, we can also use `nth-last-of-type` to begin at th
 ---
 
 ##  26. X:first-child
-    
+
+{% include codeHeader.html %}
 ```
     ul li:first-child {
        border-top: none;
@@ -758,7 +795,8 @@ Many designers apply classes of `first` and `last` to compensate for this. Inste
 ---
 
 ##  27. X:last-child
-    
+
+{% include codeHeader.html %}
 ```
     ul > li:last-child {
        color: green;
@@ -772,7 +810,8 @@ The opposite of `first-child`, `last-child` will target the last item of the ele
 Let's build a simple example to demonstrate one possible use of these classes. We'll create a styled list item. 
 
 #### Markup
-    
+
+{% include codeHeader.html %}
 ```
     <ul>
        <li> List Item </li>
@@ -784,7 +823,8 @@ Let's build a simple example to demonstrate one possible use of these classes. W
 Nothing special here; just a simple list.
 
 #### CSS
-    
+
+{% include codeHeader.html %}
 ```
     ul {
      width: 200px;
@@ -808,7 +848,8 @@ This styling will set a background, remove the browser-default padding on the `u
 > To add depth to your lists, apply a `border-bottom` to each `li` that is a shade or two darker than the `li`'s background color. Next, apply a `border-top` which is a couple shades _lighter_. 
 
 The only problem, as shown in the image above, is that a border will be applied to the very top and bottom of the unordered list - which looks odd. Let's use the `:first-child` and `:last-child` pseudo classes to fix this.
-    
+
+{% include codeHeader.html %}
 ```
     li:first-child {
         border-top: none;
@@ -837,7 +878,8 @@ Yep - IE8 supported `:first-child`, but not `:last-child`. Go figure.
 ---
 
 ##  28. X:only-child
-    
+
+{% include codeHeader.html %}
 ```
     div p:only-child {
        color: red;
@@ -849,7 +891,8 @@ Truthfully, you probably won't find yourself using the `only-child` pseudo class
 It allows you to target elements which are the _only_ child of its parent. For example, referencing the snippet above, only the paragraph that is the only child of the `div` will be colored, red.
 
 Let's assume the following markup.
-    
+
+{% include codeHeader.html %}
 ```
     <div><p> My paragraph here. </p></div>
 
@@ -874,7 +917,8 @@ In this case, the second `div`'s paragraphs will not be targeted; only the first
 ---
 
 ##  29. X:only-of-type
-    
+
+{% include codeHeader.html %}
 ```
     li:only-of-type {
        font-weight: bold;
@@ -884,7 +928,8 @@ In this case, the second `div`'s paragraphs will not be targeted; only the first
 This structural pseudo class can be used in some clever ways. It will target elements that do not have any siblings within its parent container. As an example, let's target all `ul`s, which have only a single list item. 
 
 First, ask yourself how you would accomplish this task? You could do `ul li`, but, this would target _all_ list items. The only solution is to use `only-of-type`.
-    
+
+{% include codeHeader.html %}
 ```
     ul > li:only-of-type {
        font-weight: bold;
@@ -910,7 +955,8 @@ The `first-of-type` pseudo class allows you to select the first siblings of its 
 #### A Test
 
 To better understand this, let's have a test. Copy the following mark-up into your code editor:
-    
+
+{% include codeHeader.html %}
 ```
     <div>
        <p> My paragraph here. </p>
@@ -931,7 +977,8 @@ Now, without reading further, try to figure out how to target only _"List Item 2
 #### Solution 1
 
 There are a variety of ways to solve this test. We'll review a handful of them. Let's begin by using `first-of-type`. 
-    
+
+{% include codeHeader.html %}
 ```
     ul:first-of-type > li:nth-child(2) {
        font-weight: bold;
@@ -943,7 +990,8 @@ This snippet essentially says, "find the first unordered list on the page, then 
 #### Solution 2
 
 Another option is to use the adjacent selector.
-    
+
+{% include codeHeader.html %}
 ```
     p + ul li:last-child {
        font-weight: bold;
@@ -955,7 +1003,8 @@ In this scenario, we find the `ul` that immediately proceeds the `p` tag, and th
 #### Solution 3
 
 We can be as obnoxious or as playful as we want with these selectors. 
-    
+
+{% include codeHeader.html %}
 ```
     ul:first-of-type li:nth-last-child(1) {
        font-weight: bold;   
@@ -980,6 +1029,7 @@ This time, we grab the first `ul` on the page, and then find the very first list
 
 The 'lobotomized' owls. This would, as with standard prescriptive styling, become verbose very quickly if we were to create rules for each different element pairing within the interface. Hence, we adopt the aforementioned universal selector, creating our owl face. The axiom is as follows: “All elements in the flow of the document that proceed other elements must receive a top margin of one line.”
 
+{% include codeHeader.html %}
 ```
   * + * {
 	  margin-top: 1.5em;
@@ -1002,6 +1052,7 @@ Now consider how this behaves in regard to nesting. As illustrated, using the ow
 
 This is eminently less verbose and more robust than approaching the problem unaxiomatically and removing the leftover glue after the fact, as Chris Coyier reluctantly proposed in “Spacing The Bottom of Modules”. It was this article, I should point out, that helped give me the idea for the lobotomized owl.
 
+{% include codeHeader.html %}
 ```
   .module > *:last-child,
   .module > *:last-child > *:last-child,
@@ -1016,6 +1067,7 @@ So far, we’ve not named a single element. We’ve simply written a rule. Now w
 
 ##### BOOK-LIKE, JUSTIFIED PARAGRAPHS
 
+{% include codeHeader.html %}
 ```
   p {
     text-align: justify;
@@ -1029,6 +1081,8 @@ So far, we’ve not named a single element. We’ve simply written a rule. Now w
 Note that only successive paragraphs are indented, which is conventional—another win for the adjacent sibling combinator.
 
 ##### COMPACT MODULES
+
+{% include codeHeader.html %}
 ```
   .compact * + * {
     margin-top: 0.75em;
@@ -1037,6 +1091,8 @@ Note that only successive paragraphs are indented, which is conventional—anoth
 You can employ a little class-based object orientation if you like, to create a reusable style for more compact modules. In this example, all elements that need margin receive a margin of only half a line.
 
 ##### WIDGETS WITH POSITIONING
+
+{% include codeHeader.html %}
 ```
   .margins-off > * {
     margin-top: 0;

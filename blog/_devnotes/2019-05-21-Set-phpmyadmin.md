@@ -8,6 +8,7 @@ tags: [ Linux , command , shell ]
 
 >$ sudo nano /etc/phpmyadmin/apache.conf
 
+{% include codeHeader.html %}
 ```
 Alias /phpmyadmin /usr/share/phpmyadmin
 <Directory /usr/share/phpmyadmin>

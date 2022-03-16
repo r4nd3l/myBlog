@@ -6,6 +6,7 @@ tags: [ Web, Development, JavaScript]
 ---
 
 
+{% include codeHeader.html %}
 ```
     function paros(arr){
     var ret = [];

@@ -13,6 +13,7 @@ tags: [ OpenType, Linux ]
 
 >This means the width of numbers will change and keep pushing content around. Solution:
 
+{% include codeHeader.html %}
 ```
   font-feature-settings: “tnum”;
   font-variant-numeric: tabular-nums;

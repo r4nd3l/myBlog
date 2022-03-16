@@ -13,6 +13,7 @@ Set the delay time with the last number of the line, like 2000 is equal to 2s
 
 > JavaScript
 
+{% include codeHeader.html %}
 ```
     setInterval(function() { window.scrollTo(0, document.body.scrollHeight); },2000);
 ```

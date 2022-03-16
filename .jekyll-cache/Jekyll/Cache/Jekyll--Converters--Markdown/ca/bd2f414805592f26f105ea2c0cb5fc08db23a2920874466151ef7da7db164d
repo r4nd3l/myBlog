@@ -1,0 +1,148 @@
+I"§<h2 id="code-snippets">Code snippets</h2>
+
+<p>HTML</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="section"&gt;
+  &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+    &lt;div&gt;&lt;h1&gt;Scroll&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;with&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;mouse!&lt;/h1&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;h1&gt;-&lt;/h1&gt;&lt;/div&gt;
+  
+  
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>CSS</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>h1{
+  color: gray;
+}
+.section {
+  overflow-x: scroll;
+  display: flex;
+}
+
+.section div {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section &gt; div:nth-child(even) {
+  background-color: #ccc;
+}
+</code></pre></div></div>
+
+<p>JS</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>let myScroll = document.querySelector(".section");
+myScroll.addEventListener("wheel", (e) =&gt; {
+    e.preventDefault();
+    myScroll.scrollLeft += e.deltaY;
+});
+
+</code></pre></div></div>
+:ET

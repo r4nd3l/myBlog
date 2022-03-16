@@ -13,6 +13,7 @@ Copy paste the code below into the console under the devtools in the browser
 
 > JavaScript
 
+{% include codeHeader.html %}
 ```
     var x = document.querySelectorAll('a[href*="/view/"][title]');
     var myarray = []

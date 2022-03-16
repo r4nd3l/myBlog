@@ -10,6 +10,8 @@ curl https://raw.githubusercontent.com/git-ftp/git-ftp/master/git-ftp > /bin/git
 chmod 755 /bin/git-ftp
 
 On Ubuntu:
+
+{% include codeHeader.html %}
 ```
 $ sudo apt-get install git-ftp
 $ git-ftp --version

@@ -11,6 +11,7 @@ When working with JavaScript, you'll work with data structures all the time. Tha
 
 > Arrays
 
+{% include codeHeader.html %}
 ```
     const names = ['Max', 'Manu', 'Julie', 'Max'];
     // Index starts at zero
@@ -33,6 +34,7 @@ When working with JavaScript, you'll work with data structures all the time. Tha
 
 > Sets
 
+{% include codeHeader.html %}
 ```
     const ids = new Set();
 
@@ -56,6 +58,7 @@ When working with JavaScript, you'll work with data structures all the time. Tha
 
 > Maps
 
+{% include codeHeader.html %}
 ```
     const resultData = new Map();
 
@@ -84,6 +87,7 @@ When working with JavaScript, you'll work with data structures all the time. Tha
 
 > Objects
 
+{% include codeHeader.html %}
 ```
     const person = {
         firstName: 'Max',
@@ -106,6 +110,7 @@ When working with JavaScript, you'll work with data structures all the time. Tha
 
 > Linked lists
 
+{% include codeHeader.html %}
 ```
     class LinkedList{
         constructor(){

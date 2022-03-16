@@ -9,6 +9,7 @@ A simple way to get your (Vanilla) JS variables from an external script and impo
 
 #### my_variables.js
 
+{% include codeHeader.html %}
 ```
 export const iconImage = "/waws/get-icon-image?image=";
 ```
@@ -16,6 +17,7 @@ export const iconImage = "/waws/get-icon-image?image=";
 
 ##### Template
 
+{% include codeHeader.html %}
 ```
 <template>
 	<img v-bind:src="iconImage" width="64" height="64" />
@@ -24,6 +26,7 @@ export const iconImage = "/waws/get-icon-image?image=";
 
 ##### Script
 
+{% include codeHeader.html %}
 ```
 <script>
 import { iconImage } from "./../../libs/my_variables.js";

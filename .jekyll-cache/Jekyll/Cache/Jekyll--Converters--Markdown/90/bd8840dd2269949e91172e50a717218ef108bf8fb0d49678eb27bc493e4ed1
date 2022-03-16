@@ -1,0 +1,38 @@
+I"<p>HTML:</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- Checkbox placed --&gt;
+&lt;input class="form-check-input" type="checkbox" id="maker_check" value="1"onchange="valueChanged()"&gt;
+&lt;label class="form-check-label" for="defaultCheck1"&gt;
+
+&lt;!-- Show/Hide Box --&gt;
+&lt;div id="_maker"&gt;
+  &lt;p&gt;Hello World!&lt;/p&gt;  
+&lt;/div&gt;
+</code></pre></div></div>
+
+<p>JS:</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function valueChanged()
+{
+  if($('#maker_check').is(":checked"))
+  $("#_maker").show();
+  else
+  $("#_maker").hide();
+}
+</code></pre></div></div>
+
+<p>jQuery:</p>
+
+<div class="code-header">
+    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
+</div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// jQuery is needed 
+&lt;script src="https://code.jquery.com/jquery-3.3.1.js"&gt;&lt;/script&gt;
+</code></pre></div></div>
+:ET

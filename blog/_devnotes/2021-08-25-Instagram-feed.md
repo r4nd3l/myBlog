@@ -32,6 +32,7 @@ Facebook developer dashboard:
 ---
 Instagram Display API, created my redirect_uri on ngrok and correctly assign my app_id.
 
+{% include codeHeader.html %}
 ```
 {
 "error_type": "OAuthException",
@@ -42,6 +43,7 @@ Instagram Display API, created my redirect_uri on ngrok and correctly assign my 
 
 Fixing code:
 
+{% include codeHeader.html %}
 ```
 https://api.instagram.com/oauth/authorize
   ?app_id={app-id}
@@ -61,12 +63,14 @@ Go to Roles > Instagram Users and add your Instagram account. Then go to https:/
 
 Head to the browser and paste:
 
+{% include codeHeader.html %}
 ```
 https://api.instagram.com/oauth/authorize?client_id=541712343866124&redirect_uri=https://s4mpleteam.herokuapp.com/&scope=user_profile,user_media&response_type=code&state=1
 ```
 
 Then click `Agree` and you will get a URL with a code like:
 
+{% include codeHeader.html %}
 ```
 https://s4mpleteam.herokuapp.com/?code=AQBWEfTyy24sWBfemSyxQTBjsBO6GGj52eTjaCcjV4k-aHwqHFwZm42Rk2UUqU2bSCfBrFaNhNbnol4ODHhTe2cjoidkqGysPOiy2pL7g6EcPr-QtfVvOTxm7aprBJcYH0dUNo0lMEUc8jTE3QmhYUQXv6iGT8VFj1O4sU6iGyRck0JLD2gt3hHJ1oNzsxm4KEo1Q1234lEPRmhCPbxdz5c-t1C8fyTmuwjnW43amDQxSg&state=1#_
 ```
@@ -87,6 +91,7 @@ Sample token: (from the link - provided)
 
 Paste this into the code: (accessToken)
 
+{% include codeHeader.html %}
 ```
 // InstaFeed Custom settings
 document.addEventListener("DOMContentLoaded", function() {

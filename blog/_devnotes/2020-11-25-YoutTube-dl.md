@@ -20,6 +20,8 @@ Download`youtube-dl.exe`
 -   On Linux`/etc/youtube-dl.conf`
 
 put the following lines in`youtube-dl.conf`
+
+{% include codeHeader.html %}
 ```
 -u <Username>
 -p <Password>
@@ -36,6 +38,7 @@ put the following lines in`youtube-dl.conf`
 
 Put`batch-file.txt`where you want to download the courses.
 
+{% include codeHeader.html %}
 ```
 https://app.pluralsight.com/library/courses/project-2016-business-professionals
 
@@ -48,6 +51,7 @@ Suppose you put the`batch-file.txt`on`D:\Downloads\batch-file.txt`
 
 Open command prompt and go to`D:\Downloads`and run
 
+{% include codeHeader.html %}
 ```
 D:\Downloads> youtube-dl
 ```
@@ -56,6 +60,7 @@ Now all your courses will be downloaded on`D:\Downloads`
 
 From now on just update the URLs of the courses you want to download in`batch-file.txt`file, Open command prompt and go to`D:\Downloads`and run
 
+{% include codeHeader.html %}
 ```
 D:\Downloads> youtube-dl
 ```
@@ -68,6 +73,7 @@ Update 1:
 
 1.  Please Use Cookies instead of
 
+{% include codeHeader.html %}
 ```
 -u <Username>
 -p <Password>
@@ -75,6 +81,7 @@ Update 1:
 
 The cookies switch should be something like:
 
+{% include codeHeader.html %}
 ```
 --cookies 'cookies.txt'
 ```
@@ -83,6 +90,7 @@ You can download the cookies from the browser and place it in the directory wher
 
 2\. Make Sure Your Browser User Agent & youtube-dl User Agent is same.
 
+{% include codeHeader.html %}
 ```
 --user-agent "$UserAgent"
 ```
@@ -91,6 +99,7 @@ To get your current browser user agent go to[What is my User Agent?](https://www
 
 User agents look something like:
 
+{% include codeHeader.html %}
 ```
 Mozilla/5.0 (X11; Linux i686; rv:21.0) Gecko/20100101 Firefox/21.0
 
@@ -101,6 +110,7 @@ Now, use it with`---user-agent`.
 
 3\. It might be a little inconvenient but you have to replace:
 
+{% include codeHeader.html %}
 ```
 -i
 -c
@@ -108,6 +118,7 @@ Now, use it with`---user-agent`.
 
 With
 
+{% include codeHeader.html %}
 ```
 --abort-on-error
 ```
@@ -116,6 +127,7 @@ These steps are to make sure you do not get blocked.
 
 So the resulting`youtube-dl.conf` becomes:
 
+{% include codeHeader.html %}
 ```
 --abort-on-error
 --no-warnings

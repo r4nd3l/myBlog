@@ -15,6 +15,7 @@ tags: [ CSS, Web, Development ]
 ## How feature queries work
 > The concept is quite simple, and has the same structure as `media queries`.
 
+{% include codeHeader.html %}
 ```
   @supports (height: 100vh) {
      .container {
@@ -28,6 +29,7 @@ tags: [ CSS, Web, Development ]
 
 >The following example shows real world use of feature queries.
 
+{% include codeHeader.html %}
 ```
   .container {
      height: 100%;
@@ -45,6 +47,7 @@ tags: [ CSS, Web, Development ]
 
 >The `not` operator is also supported.
 
+{% include codeHeader.html %}
 ```
   .container {
      height: 100vh;
@@ -59,6 +62,7 @@ tags: [ CSS, Web, Development ]
 
 >Another example, this time asking if `CSS Grids` are supported.
 
+{% include codeHeader.html %}
 ```
   .block {
      float: left;

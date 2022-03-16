@@ -7,12 +7,14 @@ tags: [JavaScript, Web, Development, Vue]
 
 template
 
+{% include codeHeader.html %}
 ```
     <div class="bar" :class="(lngLvl(card.level.option_value) >= index )?'':'bar-trp'" v-for="index in 6" :key="index"></div>
 ```
 
 getLevels
 
+{% include codeHeader.html %}
 ```
     getLevels(){
       return [
@@ -28,6 +30,7 @@ getLevels
 
 lngLvl
 
+{% include codeHeader.html %}
 ```
     lngLvl(langLevel){
       const MAX_LVL = 6;
