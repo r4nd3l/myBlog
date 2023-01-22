@@ -13,8 +13,34 @@ You can log all the events dispatched to an object using the Command Line API me
 
 > JavaScript
 
+Subscribe to all windows events:
+
 {% include codeHeader.html %}
 
 ```
     monitorEvents(window, "click")
 ```
+
+---
+
+Unsubscribe from all windows events:
+
+{% include codeHeader.html %}
+
+```
+    unmonitorEvents(window, "click")
+```
+
+---
+
+Collect events:
+
+{% include codeHeader.html %}
+
+```
+    unmonitorEvents(window, "click")
+```
+
+---
+
+source: [source](https://developer.chrome.com/docs/devtools/console/utilities/)
