@@ -33,14 +33,4 @@ Unsubscribe from all windows events:
 
 ---
 
-Collect events:
-
-{% include codeHeader.html %}
-
-```
-    unmonitorEvents(window, "click")
-```
-
----
-
 source: [source](https://developer.chrome.com/docs/devtools/console/utilities/)
