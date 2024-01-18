@@ -1,10 +1,10 @@
 _site
 .DS_Store
 .sass-cache
+.bundle
 .jekyll
 .jekyll-cache
 .jekyll-metadata
-.bundle
 Gemfile
 Gemfile.lock
 node_modules
