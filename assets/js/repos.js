@@ -1,13 +1,16 @@
 // GitHub repos
-let pages = 3
-for (let i=1; i < pages; i++) {
-  fetch(`https://api.github.com/users/r4nd3l/repos?page=${i}&per_page=100`, {headers: {'Accept' : 'application/vnd.github.v3+json'}})
-  .then(response => response.json()).then(data => {
-    console.log(data);
-    const root = document.querySelector('#repos');
-    data.forEach((item) => {
-      // console.log(`${item.name}`);
-      root.innerHTML += `
+let pages = 3;
+for (let i = 1; i < pages; i++) {
+  fetch(`https://api.github.com/users/r4nd3l/repos?page=${i}&per_page=100`, {
+    headers: { Accept: "application/vnd.github.v3+json" },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      const root = document.querySelector("#repos");
+      data.forEach((item) => {
+        // console.log(`${item.name}`);
+        root.innerHTML += `
         <div class="mb-4 bg-gray-50 rounded-lg border border-solid border-gray-100 hover:border-gray-300">
           <a href="${item.html_url}" target="_blank">
             <div class="p-4">
@@ -24,19 +27,20 @@ for (let i=1; i < pages; i++) {
             </div>
           </a>
         </div>
-      `
+      `;
+      });
     })
-  }).catch(error => console.error(error))
-  .finally(function () {
-    // Search and count and print out the number of gitHub repos
-    let gitHubRepos = document.querySelector('#repos').innerHTML;
-    let keyWords = "Mainly";
-    function count(str, find) {
-        let allRepo = (str.split(find)).length - 1;
-        document.querySelector('#repoNumber').innerHTML = allRepo;
-    }
-    count(gitHubRepos, keyWords);
-  });
+    .catch((error) => console.error(error))
+    .finally(function () {
+      // Search and count and print out the number of gitHub repos
+      let gitHubRepos = document.querySelector("#repos").innerHTML;
+      let keyWords = "Mainly";
+      function count(str, find) {
+        let allRepo = str.split(find).length - 1;
+        document.querySelector("#repoNumber").innerHTML = allRepo;
+      }
+      count(gitHubRepos, keyWords);
+    });
 }
 
 // For later use - images in grid view
