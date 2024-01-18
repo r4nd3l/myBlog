@@ -1,1 +1,1 @@
-Blog of Mate Molnar
+Blog of mine
