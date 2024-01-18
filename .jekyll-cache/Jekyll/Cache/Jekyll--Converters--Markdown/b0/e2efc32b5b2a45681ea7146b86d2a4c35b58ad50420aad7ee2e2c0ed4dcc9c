@@ -1,6 +1,0 @@
-I"z<h3 id="combine-several-text-files-into-a-single-file-in-unix">Combine several text files into a single file in Unix</h3>
-<p>To combine several text files into a single file in Unix, use the <code class="language-plaintext highlighter-rouge">cat</code> command:</p>
-<blockquote>
-  <h2 id="-cat-file1-file2-file3--newfile">$ cat file1 file2 file3 &gt; newfile</h2>
-</blockquote>
-:ET

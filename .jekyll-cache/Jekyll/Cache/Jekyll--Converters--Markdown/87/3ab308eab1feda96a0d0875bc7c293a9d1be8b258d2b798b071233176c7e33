@@ -1,5 +1,0 @@
-I"�<p>```
-document.addEventListener(“DOMContentLoaded”, function() {
-  document.getElementById(“wifiName_24”).style.color = “blue”;
-});</p>
-:ET

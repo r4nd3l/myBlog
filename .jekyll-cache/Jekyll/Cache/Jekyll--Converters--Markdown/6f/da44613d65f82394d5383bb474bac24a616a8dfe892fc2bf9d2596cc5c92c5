@@ -1,8 +1,0 @@
-I"	<div class="code-header">
-    <button class="copy-code-button" aria-label="Copy code to clipboard"></button>
-</div>
-<p>```
-document.addEventListener(“DOMContentLoaded”, function() {
-  document.getElementById(“wifiName_24”).style.color = “blue”;
-});</p>
-:ET
