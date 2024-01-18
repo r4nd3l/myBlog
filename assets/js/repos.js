@@ -6,7 +6,7 @@ for (let i = 1; i < pages; i++) {
   })
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       const root = document.querySelector("#repos");
       data.forEach((item) => {
         // console.log(`${item.name}`);
